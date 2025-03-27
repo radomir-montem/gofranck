@@ -1,0 +1,179 @@
+<div class="go-section-waterproof">
+  <div class="go-waterproof-container">
+    <div class="go-waterproofness">
+      <h2 class="go-h2-title">{{ section.settings.header | escape }}</h2>
+      <p class="sg-font-size-l">
+        {{ section.settings.paragraph_text }}
+      </p>
+      <div class="go-waterproofness-diagram-block">
+        <div class="go-diagram-block-wrapper">
+          <div class="go-diagram-block-grey">
+            <div
+              data-w-id="cb61520a-e336-2ddc-d79e-1af81860abbf"
+              style="width: 40%; height: 40px;"
+              class="go-diagram-filled filled-40"
+            ></div>
+          </div>
+          <div class="go-diagram-title">
+            {{ section.settings.eightk_text | escape }}
+          </div>
+          <p class="sg-font-size-s">
+            {{ section.settings.eightk_paragraph | escape }}
+          </p>
+        </div>
+        <div class="go-diagram-block-wrapper">
+          <div class="go-diagram-block-grey">
+            <div data-w-id="38daaa5c-d4c9-5c2c-b951-c0bf0c4ef37b" style="width: 50%; height: 40px;" class="go-diagram-filled filled-50"></div>
+          </div>
+          <div class="go-diagram-title">
+            {{ section.settings.tenk_text | escape }}
+          </div>
+          <p class="sg-font-size-s">
+            {{ section.settings.tenk_paragraph | escape }}
+          </p>
+        </div>
+        <div class="go-diagram-block-wrapper">
+          <div class="go-diagram-block-grey">
+            <div
+              data-w-id="07d71895-3e95-98fb-da9a-ce492c889da1"
+              style="width: 100%; height: 40px;"
+              class="go-diagram-filled filled-100"
+            ></div>
+          </div>
+          <div class="go-diagram-title">
+            {{ section.settings.twentyk_text | escape }}
+          </div>
+          <p class="sg-font-size-s">
+            {{ section.settings.twentyk_paragraph | escape }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="w-node-_26558260-d217-b376-863d-9e2611042ee7-1658e309" class="go-waterproof-image-block">
+      {%- if section.settings.image_1 != blank -%}
+        {{
+          section.settings.image_1 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          class: "go-image-block-background-waterproof",
+          sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image_1.alt | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+      <div class="go-image-block-overlay-right"></div>
+      <div class="go-waterproof-text-wrapper">
+        <div class="go-hero-div-height"><h3 class="go-h3-title-white">{{ section.settings.photo_header | escape }}</h3></div>
+        <div class="go-hero-div-height">
+          <div class="go-hero-buttons-wrapper">
+            <a href="{{ section.settings.url_1 }}" class="go-hero-button w-inline-block">
+              <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
+              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
+            ><a href="{{ section.settings.url_2 }}" class="go-hero-button w-inline-block">
+              <div class="go-hero-button-text">{{ section.settings.button_2_text | escape }}</div>
+              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "go-waterproof",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "header",
+      "default": "HOW WATERPROOF IS A GOFRANCK?"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_text",
+      "label": "Paragraph text",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "eightk_text",
+      "label": "8K header",
+      "default": "8K | 8.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "eightk_paragraph",
+      "label": "8K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "tenk_text",
+      "label": "10K header",
+      "default": "10K | 10.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "tenk_paragraph",
+      "label": "10K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "twentyk_text",
+      "label": "20K header",
+      "default": "20K | 20.000 MM"
+    },
+    {
+      "type": "textarea",
+      "id": "twentyk_paragraph",
+      "label": "20K paragraph",
+      "default": "Enter your paragraph here"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "First button text",
+      "default": "Button 1"
+    },
+    {
+      "type": "text",
+      "id": "photo_header",
+      "label": "header on photo",
+      "default": "20K COLUMN PRESSURE"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "Fecond Hero url"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Second button text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "url_2",
+      "label": "Second hero url"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Pick your first image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go waterproof explanation"
+    }
+  ]
+}
+{% endschema %}

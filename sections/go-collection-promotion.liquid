@@ -1,0 +1,77 @@
+{% comment %}
+{{ "go-wf.css" | asset_url | stylesheet_tag }}
+<script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+<script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+<div class="go-section-promotion-collection">
+  <a
+    href="{{ section.settings.url_1 }}"
+    class="go-promotion-collection-container w-inline-block"
+  >
+    {%- if section.settings.image_1 != blank -%}
+    {{-
+      section.settings.image_1 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      class: "go-image-promotion-collection",
+      sizes: "(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 49vw",
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image_1.alt | escape
+    }}
+    {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+    <div class="go-image-block-overlay"></div>
+    <div class="go-promotion-collection-text-wrapper">
+      <div class="go-hero-div-height">
+        <h3 class="go-h2-title-white">
+          {{ section.settings.header_text | escape }}
+        </h3>
+      </div>
+      <div class="go-hero-div-height">
+        <div class="go-hero-buttons-wrapper">
+          <div class="go-hero-button">
+            <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
+            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "go-collection-promotion",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Pick section image"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header text",
+      "default": "Enter your title here"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Button text",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "url_1",
+      "label": "Collection url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go collection promotion"
+    }
+  ]
+}
+{% endschema %}

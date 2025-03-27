@@ -1,0 +1,49 @@
+{% if section.settings.product != empty %}
+    {% liquid
+        if section.settings.product.metafields.product_information.product_fit != blank
+            assign card_index = 0
+            if section.settings.product.metafields.product_information.product_fit == "Fitted"
+                assign card_index = 0
+            elsif section.settings.product.metafields.product_information.product_fit == "Regular"
+                assign card_index = 1
+            elsif section.settings.product.metafields.product_information.product_fit == "Loose"
+                assign card_index = 2
+            elsif section.settings.product.metafields.product_information.product_fit == "Oversized"
+                assign card_index = 3
+            endif
+        endif
+    %}
+  {% if section.settings.product.metafields.product_information.gender == 'women' %}
+    {%
+      render "go-women-fit-and-size-snippet",
+      fit_product: section.settings.product,
+      index: card_index,
+    %}
+  {% elsif section.settings.product.metafields.product_information.gender == 'men' %}
+    {%
+      render "go-men-fit-and-size-snippet",
+      fit_product: section.settings.product,
+      index: card_index,
+    %}
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "go-fit-size",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product for anatomy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go fit and size guide"
+    }
+  ]
+}
+{% endschema %}

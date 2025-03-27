@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "aa5b0d2d-f3ba-45a7-b3a8-a890fdd900b4": {
+      "type": "go-paragraph",
+      "custom_css": [],
+      "settings": {
+        "header_text": "TIME TO GET CIRCULAR!",
+        "paragraph": "<p>Let’s close the loop and make sure that our items don’t end up in landfills. Shamefully this is where more than half of all clothes end up, which is devastating for the environment. A big problem is that we have lost connection with our stuff. Instead of investing in good items that will last, it’s easy to fall for the fast fashion trap where you can buy endlessly and discard seasonally. We can do much better than this right?<br\/><br\/>To take a step in the right direction we set up a  5 YEAR CIRCULARITY PROGRAMME to ensure that your GOFRANCK will get a second life or is (partially) recycled when you have out worn it. We also want to motivate our consumers to hold on to their garments longer. It’s a small but decisive step towards slow fashion.<\/p><p><br\/>We will restore, reuse or recycle the garment, making sure it won’t end up in a landfill and taking a step closer to our goal of becoming completely circular. To become a part of the Circularity Programme, all you have to do is register below. Then just enjoy your jacket and hand it in after (at least) 5 years. You’ll receive a <strong>30% discount <\/strong>for our webshop where you can find your next favourite Outerproof™.<\/p>"
+      }
+    },
+    "168871672018a5e6a3": {
+      "type": "apps",
+      "blocks": {
+        "e837ca55-dc86-45e9-a72a-37325b465f96": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SSCryC"
+          }
+        }
+      },
+      "block_order": [
+        "e837ca55-dc86-45e9-a72a-37325b465f96"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "23495664-9d44-4636-b9e1-839e25cb2e93": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.klaviyo-form-RDeHZL {\n  display: none !important;\n}\n<\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "aa5b0d2d-f3ba-45a7-b3a8-a890fdd900b4",
+    "168871672018a5e6a3",
+    "23495664-9d44-4636-b9e1-839e25cb2e93"
+  ]
+}

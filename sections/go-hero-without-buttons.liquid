@@ -1,0 +1,49 @@
+<div class="go-section-full-hero">
+    {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          class: "go-hero-background-image",
+          sizes: "100vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+  <div class="go-section-full-hero-overlay"></div>
+  <div class="go-full-hero-container">
+    <div class="go-hero-text-wrapper">
+      <div class="go-hero-div-height"><h1 class="go-hero-heading-2">
+        {{ section.settings.header_text | escape }}
+    </h1></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "go-hero-without-buttons",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Pick your main image"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Hero title",
+      "default": "Enter your title here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go hero banner without buttons"
+    }
+  ]
+}
+{% endschema %}

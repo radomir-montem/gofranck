@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d109663f-7f1c-476b-8bbd-012ba575322f": {
+      "type": "go-paragraph",
+      "settings": {
+        "header_text": "Lifetime Warranty",
+        "paragraph": "<p><strong>Introducing GOFRANCK: Your Lifetime Jacket Companion<br\/><\/strong>At GOFRANCK, we take pride in creating premium outerwear that transcends trends and seasons. Crafted with precision and a commitment to quality, our jackets are more than just garments; they are companions for life.<\/p><p><br\/><strong>Lifetime Warranty: Your Assurance of Quality<br\/><\/strong>We’re so confident in the durability and craftsmanship of our jackets that we offer a lifetime warranty with every purchase. This warranty reflects our unwavering dedication to excellence and our belief in the longevity of our products.<\/p><p><br\/><strong>What Does Our Lifetime Warranty Cover?<br\/><\/strong>Our lifetime warranty covers manufacturing defects and craftsmanship, ensuring that your GOFRANCK jacket is free from any issues that result from the construction process. If you discover any such defects, we’ll stand by our commitment and take care of it for you. Lifetime warranty will only work with jackets, no other items.<\/p><p><br\/><strong>Exclusions:<br\/><\/strong>We believe in transparency, so it’s essential to clarify that our lifetime warranty does not cover regular wear and tear, accidental damage, or damage caused by misuse or neglect. It’s a warranty that speaks to the enduring quality of our jackets and their ability to withstand the test of time, not a guarantee against the natural signs of aging or unintended mishaps.<\/p>"
+      }
+    },
+    "1698320857376dd3de": {
+      "type": "apps",
+      "blocks": {
+        "544a6e77-b75c-4f31-b524-92d1fe1855aa": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "WnEhdr"
+          }
+        }
+      },
+      "block_order": [
+        "544a6e77-b75c-4f31-b524-92d1fe1855aa"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "a8657bbb-04ac-4bd2-9a48-e0b05bbd3a2c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.klaviyo-form-RDeHZL {\n  display: none !important;\n}\n<\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d109663f-7f1c-476b-8bbd-012ba575322f",
+    "1698320857376dd3de",
+    "a8657bbb-04ac-4bd2-9a48-e0b05bbd3a2c"
+  ]
+}

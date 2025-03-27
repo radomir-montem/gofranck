@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "url": "shopify:\/\/collections\/autumn-winter-2024-shop-all-products",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {}
+    },
+    "16623663094fa6e523": {
+      "type": "go-featured-products",
+      "settings": {
+        "header": "featured products",
+        "image_aspect_ratio": 75,
+        "product_1": "gf-water-repellent-spray-multi-colour",
+        "product_2": "gale-deep-black-3",
+        "product_3": "bayu-tahitian-bleu",
+        "product_4": "dalfon-deep-black-moonbeam-grey",
+        "button_1_text": "checkout all products",
+        "url_1": "shopify:\/\/collections\/autumn-winter-collection"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "16623663094fa6e523"
+  ]
+}

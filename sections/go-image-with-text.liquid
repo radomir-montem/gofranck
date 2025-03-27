@@ -1,0 +1,82 @@
+<div class="go-section-text-image">
+    <div class="go-text-image-container">
+    {% if section.settings.switch_image_and_paragraph %}
+            <div class="go-waterproofness">
+            <h2 class="go-h2-title">{{ section.settings.header_text | escape }}</h2>
+            <div class="go-paragraph-diagram">
+            {{ section.settings.paragraph }}
+            </div>
+        </div>
+    {% endif %}
+        <div id="w-node-_79099f77-c969-21fa-785f-82d31e987b95-1658e309" class="go-waterproof-image-block">
+            {%- if section.settings.image != blank -%}
+                {{
+                section.settings.image | image_url: width: 1500 | image_tag:
+                loading: 'lazy',
+                width: section.settings.image.width,
+                class: "go-hero-background-image",
+                sizes: "100vw",
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: section.settings.image.alt | escape
+                }}
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+        <div class="go-image-block-overlay-right"></div>
+        <div class="go-waterproof-text-wrapper">
+            <div class="go-hero-div-height"><h3 class="go-h3-title-white without-padding">{{ section.settings.over_image_text | escape }}</h3></div>
+            <div class="go-hero-div-height"></div>
+        </div>
+        </div>
+        {% if section.settings.switch_image_and_paragraph == false %}
+            <div class="go-waterproofness">
+            <h2 class="go-h2-title">{{ section.settings.header_text | escape }}</h2>
+            <div class="go-paragraph-diagram">
+            {{ section.settings.paragraph }}
+            </div>
+        </div>
+    {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "go-image-with-text",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "switch_image_and_paragraph",
+      "label": "Switch the image and text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Pick your main image"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Hero title",
+      "default": "Enter your title here"
+    },
+    {
+      "type": "text",
+      "id": "over_image_text",
+      "label": "Text on image"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    }
+  ],
+  "presets": [
+    {
+      "name": "go image with text"
+    }
+  ]
+}
+{% endschema %}

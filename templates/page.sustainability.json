@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1661859947138219d2": {
+      "type": "go-hero-without-buttons",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/thick-lush-green-forest.jpg",
+        "header_text": "SUSTAINABILITY"
+      }
+    },
+    "1661861585f4b20b37": {
+      "type": "go-paragraph",
+      "disabled": true,
+      "settings": {
+        "header_text": "SUSTAINABLE STEPS",
+        "paragraph": "<p>What you buy matters, and what we make too. It’s our responsibility as a brand to work towards a sustainable future. From design, material sourcing, production and logistics. Even the smallest steps make a difference. The coming years are fundamental in making a turn around for a liveable planet. Our goal is to become climate positive, and we’ll be frank about it, we’re not there yet. That’s why we have strong goals for the future and have made steps towards getting there. Follow our journey!<\/p>"
+      }
+    },
+    "1661860213566faeae": {
+      "type": "go-image-with-text",
+      "settings": {
+        "switch_image_and_paragraph": false,
+        "image": "shopify:\/\/shop_images\/DSCF9427.jpg",
+        "header_text": "follow our journey!",
+        "over_image_text": "LET'S BE FRANCK",
+        "paragraph": "<p>Fusing form and function in our outerwear pieces is at the core of each design. All GOFRANCKS are made with purpose in mind and carefully designed to protect the wearer from the surroundings.<br\/>In return we also see it as our responsibility to work towards a more sustainable future and protect the environment from the negative impact the fashion industry can have. Our goal is to become climate positive, and we’ll be frank about it, we’re not there yet. That’s why we have strong goals for the future and have made steps towards getting there.<br\/><\/p><p>Follow our journey!<br\/><br\/><strong>MATERIALS<br\/><\/strong>Choosing sustainable materials and finishes for our garments is elemental in each design. Each GOFRANCK is animal-free and<br\/>made with high performance, toxin-free materials + trims that are built to last.<br\/><br\/><strong>DUPONT SORONA® BIODEGRADABLE INSULATION <br\/><\/strong>Our padded styles have Sorona® fibre filling by DuPont™, a plant-based insulation with high performance qualities. <br\/>This biodegradable filling gives tremendous warmth, is animal (cruelty) free, moisture wicking, washable and stays in shape.<br\/><strong><br\/>BIONIC FINISH ECO WATER REPELLENT FINISH<\/strong><br\/>Our materials are enhanced with a non-halogenated, APEO-free and fluorine-free water repellent textile finish for ultimate performance. Future steps are to use an ecological waterproof coating next to this, but we haven’t found one that meet’s our waterproofing standards<br\/>as of yet.<\/p>"
+      }
+    },
+    "1661861798903fd6e6": {
+      "type": "go-image-with-text",
+      "settings": {
+        "switch_image_and_paragraph": true,
+        "image": "shopify:\/\/shop_images\/GOFRANCK_SS25_HOT_SUMMER_ICEBERG_GREEN_11_258feff6-cdc2-476c-8f8b-78235ee8aa41.jpg",
+        "header_text": "",
+        "over_image_text": "",
+        "paragraph": "<p><strong>HIGH PERFORMANCE ANIMAL-FREE MATERIALS<\/strong><br\/>Our outerwear is free of animal products and made from high quality materials that are produced as sustainable as possible. There are so many animal-free alternatives for outerwear that there just isn’t any need to use them in our<br\/>designs. We’re working to limit or eventually eliminate the use of virgin materials and only use recycled fabrics, but we’re still<br\/>in the testing phase for recycled fabrics and yarn that are up to our standard. By only choosing high quality materials we can ensure that your GOFRANCK will stand the test of time and won’t end up in the land fill. On top of carefully selecting the materials our garments are made of, we are also working on a circularity program to ensure that we can recycle as much of the materials as possible and reach our goal of becoming completely circular.<\/p><p><strong>CIRCULARITY PROGRAMME<br\/><\/strong>Help us to reach our goal of becoming completely circular and hand in your GOFRANCK after you’re done with it. You’ll get a store credit and we’ll make sure that the jacket gets a good second life and stays out of landfills, so it is a win-win situation.<br\/>Head to our Circularity page to sign up and get more information.<br\/><br\/><\/p><p><\/p>"
+      }
+    },
+    "166186184216377909": {
+      "type": "go-image-with-text",
+      "settings": {
+        "switch_image_and_paragraph": false,
+        "image": "shopify:\/\/shop_images\/IMG_7930.jpg",
+        "header_text": "",
+        "over_image_text": "",
+        "paragraph": "<p><strong>ETHICAL SOURCING AND MANUFACTURING<br\/><\/strong>All GOFRANCK items are produced in an ethical way that minimizes harm for the environment and the people working in the factories. By only working with certified suppliers, we can guarantee that all the people involved in making our outerwear work in safe conditions, get fair pay and work normal hours. Choosing conscious means not looking away, controlling that conditions are upheld with annual reports and knowing that what you buy really matters.<br\/><strong><br\/>GREEN TRANSPORT + PACKAGING<br\/><\/strong>Choosing wisely how to transport the collection is a big step in becoming more sustainable. The supply chain is now delivered by boat and train instead or air freight. Each GOFRANCK is shipped in a biodegradable polybag and has fully recycled hangtags. There is still more to<br\/>be done though. We are currently in conversations to find out the greenest domestic shipment service, but as this is not handled by one courier service when travelling through multiple countries it has proven very challenging logistically and as of yet we weren’t able to find a shipping service that covers our needs. Work in progress! <\/p><p><\/p>"
+      }
+    },
+    "1661861872d7459a2a": {
+      "type": "go-image-with-text",
+      "settings": {
+        "switch_image_and_paragraph": true,
+        "image": "shopify:\/\/shop_images\/GOFRANCK-waterproofing-spray-image-2024-waterproof-jackets.jpg",
+        "header_text": "PRODUCT CARE",
+        "over_image_text": "",
+        "paragraph": "<p>Taking proper care of our outerwear items<br\/>has a big effect on the durability and lifespan of the garment and in turn minimises the impact on the environment. Because of this we’re always working on creating product care tools like the Organotex X GOFRANCK Water Repellent Spray and Wash. This ensures that the jacket can be properly cleaned without damaging the waterproof elements of the fabric. On top of that we’re educating our customers on proper care, for example with our care labels with jacket specific cleaning instructions to ensure proper care and maintenance.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661859947138219d2",
+    "1661861585f4b20b37",
+    "1661860213566faeae",
+    "1661861798903fd6e6",
+    "166186184216377909",
+    "1661861872d7459a2a"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "go-main-product",
+      "blocks": {
+        "6dd5076b-057c-449e-ad99-7b44cf0a3a94": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "5a631696-0f5b-4279-8d3e-8e5745ef9737": {
+          "type": "product-title",
+          "settings": {}
+        },
+        "7373c105-9cde-43b7-a43f-ed518d93056f": {
+          "type": "variant-selectors",
+          "settings": {}
+        },
+        "d160fe4a-74eb-483a-95dc-809bf651e66b": {
+          "type": "add-buttons",
+          "settings": {
+            "coming_soon": false,
+            "coming_soon_text": "Coming soon"
+          }
+        },
+        "a2b2e0b4-ef70-4781-a70f-a0a601d174aa": {
+          "type": "usp-content",
+          "settings": {
+            "usp1": "100 days return period",
+            "usp2": "Order before 15:00, shipped out today",
+            "usp3": "Lifetime warranty & circularity programme"
+          }
+        }
+      },
+      "block_order": [
+        "6dd5076b-057c-449e-ad99-7b44cf0a3a94",
+        "5a631696-0f5b-4279-8d3e-8e5745ef9737",
+        "7373c105-9cde-43b7-a43f-ed518d93056f",
+        "d160fe4a-74eb-483a-95dc-809bf651e66b",
+        "a2b2e0b4-ef70-4781-a70f-a0a601d174aa"
+      ],
+      "settings": {}
+    },
+    "efbaab58-9f91-4c29-8fc4-8986ee14049e": {
+      "type": "go-main-product-page-information",
+      "blocks": {
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-description-1": {
+          "type": "description",
+          "settings": {
+            "description_link_title": "description"
+          }
+        },
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-specifications-1": {
+          "type": "specifications",
+          "settings": {
+            "specifications_link_title": "Specifications"
+          }
+        },
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-shipping-1": {
+          "type": "shipping",
+          "settings": {
+            "shipping_information_link_title": "Shipping",
+            "shipping_information": "<p><strong>The Netherlands & Europe 1<\/strong>: FREE SHIPPING<br\/>Belgium, Germany, Luxembourg and The Netherlands<br\/><br\/><strong>Europe 2<\/strong>: €6,95<br\/>France, Monaco<br\/><br\/><strong>Europe 3<\/strong>: €9,95<br\/>Andorra, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, Greece, Hungary, Iceland, Italy, Ireland, Latvia, Lithuania, Norway, Poland, Portugal, Romania, San Marino, Slovenia, Sweden, Switzerland, Spain, Turkey, Vatican City, United Kingdom<br\/><br\/><strong>Rest of the world<\/strong>: €18.50<br\/>Additional import duties will be added for shipments outside the EU, costs vary per country. Please check your local customs regulations for price indication.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-description-1",
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-specifications-1",
+        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-shipping-1"
+      ],
+      "settings": {
+        "product": ""
+      }
+    },
+    "1658149516ba83ec13": {
+      "type": "go-anatomy-home-page",
+      "settings": {
+        "header": "Anatomy of the",
+        "show_name": true,
+        "product": "{{ product }}",
+        "icon_guide_url": "shopify:\/\/pages\/icon-guide"
+      }
+    },
+    "16941635382e471427": {
+      "type": "apps",
+      "blocks": {
+        "805f40a6-c35b-487c-bca2-455fa0e3acf4": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "805f40a6-c35b-487c-bca2-455fa0e3acf4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "3104a5af-8cb2-44fc-85d0-47ea589da657": {
+      "type": "go-fit-and-size-chart",
+      "settings": {
+        "product": "{{ product }}"
+      }
+    },
+    "product-recommendations": {
+      "type": "go-product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_aspect_ratio": 75,
+        "products_to_show": 4
+      }
+    },
+    "173097353250306966": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_xtcKpU": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Y8U7L7"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_xtcKpU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "efbaab58-9f91-4c29-8fc4-8986ee14049e",
+    "1658149516ba83ec13",
+    "16941635382e471427",
+    "3104a5af-8cb2-44fc-85d0-47ea589da657",
+    "product-recommendations",
+    "173097353250306966"
+  ]
+}

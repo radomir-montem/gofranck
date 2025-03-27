@@ -1,0 +1,116 @@
+<a href="{{ section.settings.url }}" class="sg-section sg-campaign w-inline-block"
+  >
+    {% if section.settings.main_image != blank %}
+      {{
+        section.settings.main_image
+        | image_url: width: 1500
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          class: 'sg-campaign-bg-image-desktop',
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt
+        | escape
+      }}
+    {% else %}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+
+    {% if section.settings.mobile_image != blank %}
+      {{
+        section.settings.mobile_image
+        | image_url: width: 1500
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          class: 'sg-campaign-bg-image-mobile',
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt
+        | escape
+      }}
+    {% elsif section.settings.main_image != blank%}
+    {{
+      section.settings.main_image
+      | image_url: width: 1500
+      | image_tag:
+        loading: 'lazy',
+        width: section.settings.image.width,
+        class: 'sg-campaign-bg-image-mobile',
+        sizes: '100vw',
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt
+      | escape
+    }}
+    {% else %}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+    {% comment %} <img
+    src="https://uploads-ssl.webflow.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+    loading="lazy"
+    alt=""
+    class="sg-campaign-bg-image-desktop"
+
+  ><img
+    src="https://uploads-ssl.webflow.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+    loading="lazy"
+    alt=""
+    class="sg-campaign-bg-image-mobile"
+  > {% endcomment %}
+  <div class="sg-campaign-overlay"></div>
+  <div class="sg-container sg-campaign">
+    <h1 class="sg-campaign-title sg-white">{{ section.settings.header_text }}</h1>
+    {% if section.settings.button_text != blank %}
+    <div class="sg-button-wrapper">
+      <div data-w-id="4c679bf5-41b3-1bbb-8186-c1c8a6c6c918" class="sg-campaign-button">
+        <div class="sg-button-text-white">{{ section.settings.button_text }}</div>
+        <div style="background-color: rgba(255, 255, 255, 0);" class="sg-diamond-icon-white"></div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</a>
+
+
+{% schema %}
+{
+  "name": "go-campaign-hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Pick your main image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Pick your mobile image (optional)"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Hero title",
+      "default": "Enter your title here"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Hero title",
+      "default": "Enter your button text here"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Hero url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Go Campaign Hero"
+    }
+  ]
+}
+{% endschema %}

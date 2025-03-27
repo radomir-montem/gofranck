@@ -1,0 +1,36 @@
+.go-section-contact-widget {
+    width: 0;
+}
+
+.go-product-card-badge  {
+    position: absolute;
+    z-index: 1;
+    background: #000000;
+    color: #ffffff;
+    padding: 5px 12px;
+    right: 10px;
+    bottom: 10px;
+    font-family: proxima-nova,sans-serif;
+}
+
+.go-hero-div-height-title {
+    flex-wrap: wrap;
+}
+
+.go-hero-heading.go-hero-subtitle {
+    display: block;
+    width: 100%;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+@media (max-width: 768px) {
+    .go-hero-heading.go-hero-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .go-hero-div-height-title {
+        margin-bottom: 6px !important;
+    }
+}

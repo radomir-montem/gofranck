@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "166203872600f0f748": {
+      "type": "go-hero-without-buttons",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSCF8268.jpg",
+        "header_text": "GET IN TOUCH"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16620386046aedcf59": {
+      "type": "go-paragraph",
+      "settings": {
+        "header_text": "Contact information",
+        "paragraph": "<p>Have any questions, ideas or anything else you would like to share? Hit us up! The GOFRANCK TEAM is happy to help out, what ever the case.<br\/><br\/><strong>GOFRANCK OUTERPROOFS HEADQUARTERS<br\/><\/strong>Johan van Hasseltweg 24B, 1022 WV Amsterdam, The Netherlands<\/p><p>E: hello@gofranck.com<br\/>T: +31 (0) 20 626 1919<br\/>Monday — Friday<br\/>9:30 am — 17:30 pm<\/p>"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "166203872600f0f748",
+    "main",
+    "16620386046aedcf59",
+    "form"
+  ]
+}
