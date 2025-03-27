@@ -1,0 +1,284 @@
+{% comment %}
+  {{ "go-wf.css" | asset_url | stylesheet_tag }}
+  <script src="{{ "go-jquery.js" | asset_url }}" defer></script>
+  <script src="{{ "go-wf.js" | asset_url }}" defer></script>
+{% endcomment %}
+<div class="hero-slideshow swiper">
+    <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+            <div class="hero-slideshow__slide swiper-slide">
+                <div class="go-section-hero">
+                    {%- if block.settings.image != blank -%}
+                    {% assign hero_image_class = 'go-hero-background-image' %}
+                    {% if block.settings.mobile_image != blank %}
+                        {% assign hero_image_class = 'go-hero-background-image small-hide' %}
+                    {% endif %}
+                    {{
+                        block.settings.image
+                        | image_url: width: 1500
+                        | image_tag:
+                        loading: 'lazy',
+                        width: block.settings.image.width,
+                        class: hero_image_class,
+                        sizes: '100vw',
+                        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                        alt: block.settings.image.alt
+                        | escape
+                    }}
+                    {% if block.settings.mobile_image != blank %}
+                        {{
+                        block.settings.mobile_image
+                        | image_url: width: 750
+                        | image_tag:
+                            loading: 'lazy',
+                            width: block.settings.mobile_image.width,
+                            class: 'go-hero-background-image medium-hide large-up-hide',
+                            sizes: '100vw',
+                            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                            alt: block.settings.mobile_image.alt
+                        | escape
+                        }}
+                    {% endif %}
+                    {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    <div class="go-section-hero-overlay"></div>
+                    <div class="go-hero-container">
+                    <div class="go-hero-text-wrapper">
+                        <div
+                        data-w-id="e42844d3-1683-f46d-5c55-b84054fef0b1"
+                        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                        class="go-hero-div-height-title"
+                        >
+                        {% if block.settings.text1 != blank %}
+                            <h1 class="go-hero-heading">{{ block.settings.text1 }}</h1>
+                        {% endif %}
+                        {% if block.settings.text2 != blank %}
+                            <div class="main-title-diamond-icon"></div>
+                            <h1 class="go-hero-heading">{{ block.settings.text2 }}</h1>
+                        {% endif %}
+                        {% if block.settings.subtitle != blank %}
+                            <h1 class="go-hero-heading go-hero-subtitle">{{ block.settings.subtitle }}</h1>
+                        {% endif %}
+                        </div>
+                        <div class="go-hero-div-height">
+                        <div
+                            data-w-id="d1254ee2-6d56-a320-bdae-3d3502bcaf80"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                            class="go-hero-buttons-wrapper"
+                        >
+                            <a
+                            {% if block.settings.url_1 == blank %}
+                                style="opacity: 0.5;"
+                            {% else %}
+                                href="{{ block.settings.url_1 }}"
+                            {% endif %}
+                            class="go-hero-button w-inline-block"
+                            >
+                            <div class="go-hero-button-text">{{ block.settings.button_1_text }}</div>
+                            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
+                            ><a
+                            {% if block.settings.url_2 == blank %}
+                                style="opacity: 0.5;"
+                            {% else %}
+                                href="{{ block.settings.url_2 }}"
+                            {% endif %}
+                            class="go-hero-button w-inline-block"
+                            >
+                            <div class="go-hero-button-text">{{ block.settings.button_2_text }}</div>
+                            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div
+                    data-w-id="fa265967-107a-7571-7ff5-2c25aa7ecc86"
+                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                    class="go-hero-bottom-banner"
+                    >
+                    <div
+                        class="go-hero-banner-text truncate"
+                        style="transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;"
+                    >
+                        WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;WINDPROOF &nbsp; | &nbsp; WATERPROOF 20K COLUMN PRESSURE &nbsp; | &nbsp; BREATHABLE 8K &nbsp; | &nbsp;
+                        &nbsp;
+                    </div>
+                    <div class="w-embed">
+                        <style>
+                        .truncate { white-space: nowrap; text-overflow: ellipsis;
+                        }
+                        </style>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% if section.blocks.size > 1 %}
+        <div class="swiper-pagination"></div>
+
+        {% if section.settings.enable_arrow %}
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        {% endif %}
+    {% endif %}
+</div>
+<script>
+    {% if section.blocks.size > 1 %}
+        const swiper = new Swiper('.hero-slideshow', {
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        
+            {% if section.settings.enable_arrow %}
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            {% endif %}
+
+            {% if section.settings.autoplay %}
+                autoplay: {
+                    delay: {{ section.settings.autoplay_speed | times: 1000 }}
+                }
+            {% endif %}
+        });
+    {% endif %}
+</script>
+  
+  {% schema %}
+  {
+    "name": "Hero Slideshow",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Enable Autoplay",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "autoplay_speed",
+            "label": "Autoplay speed",
+            "default": 3,
+            "min": 2,
+            "max": 10,
+            "step": 1,
+            "unit": "S"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_arrow",
+            "label": "Enable Arrow",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Pick your main image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "mobile_image",
+                    "label": "Pick your mobile main image"
+                },
+                {
+                    "type": "text",
+                    "id": "text1",
+                    "label": "First Title",
+                    "default": "AW"
+                },
+                {
+                    "type": "text",
+                    "id": "text2",
+                    "label": "Second Title",
+                    "default": "24"
+                },
+                {
+                    "type": "textarea",
+                    "id": "subtitle",
+                    "label": "Subtitle",
+                    "default": "Sale is live"
+                },
+                {
+                    "type": "text",
+                    "id": "button_1_text",
+                    "label": "Second button text",
+                    "default": "Button 1"
+                },
+                {
+                    "type": "url",
+                    "id": "url_1",
+                    "label": "Second Hero url"
+                },
+                {
+                    "type": "text",
+                    "id": "button_2_text",
+                    "label": "Second button text",
+                    "default": "Button 2"
+                },
+                {
+                    "type": "url",
+                    "id": "url_2",
+                    "label": "Second hero url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Hero Slideshow"
+      }
+    ]
+  }
+  {% endschema %}
+  

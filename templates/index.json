@@ -1,7 +1,34 @@
 {
   "sections": {
+    "hero_slideshow_FkHRjA": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_TrzDzf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HR_DSCF9930_a464d053-4072-4920-8400-2e16be57ee15.jpg",
+            "text1": "SS",
+            "text2": "25",
+            "subtitle": "",
+            "button_1_text": "WOMEN",
+            "url_1": "shopify:\/\/collections\/spring-summer-2025-women",
+            "button_2_text": "MEN",
+            "url_2": "shopify:\/\/collections\/spring-summer-2025-men"
+          }
+        }
+      },
+      "block_order": [
+        "slide_TrzDzf"
+      ],
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false
+      }
+    },
     "16578772844ecc4b0e": {
       "type": "go-hero",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "image": "shopify:\/\/shop_images\/HR_DSCF9930_a464d053-4072-4920-8400-2e16be57ee15.jpg",
@@ -104,6 +131,7 @@
     }
   },
   "order": [
+    "hero_slideshow_FkHRjA",
     "16578772844ecc4b0e",
     "1657877722c613bc6f",
     "16578778361135233e",
