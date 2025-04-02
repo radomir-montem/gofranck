@@ -43,7 +43,9 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "text1": "AW",
+            "image": "shopify://shop_images/DSCF0072.jpg",
+            "mobile_image": "shopify://shop_images/DSCF0072.jpg",
+            "text1": "SS",
             "text2": "24",
             "subtitle": "Sale is live",
             "button_1_text": "Button 1",
