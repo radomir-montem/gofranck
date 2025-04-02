@@ -27,14 +27,13 @@
         },
         "slide_7cjbAa": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DSCF0072.jpg",
             "mobile_image": "shopify://shop_images/DSCF0072.jpg",
             "text1": "SS",
             "text2": "25",
             "subtitle": "",
-            "button_1_text": "Button 1",
+            "button_1_text": "WOMEN",
             "url_1": "",
             "button_2_text": "Button 2",
             "url_2": ""
@@ -42,7 +41,6 @@
         },
         "slide_Nhh7Ca": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DSCF0072.jpg",
             "mobile_image": "shopify://shop_images/DSCF0072.jpg",
