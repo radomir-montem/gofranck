@@ -27,8 +27,9 @@
         },
         "slide_7cjbAa": {
           "type": "slide",
-          "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/DSCF0072.jpg",
+            "mobile_image": "shopify://shop_images/DSCF0072.jpg",
             "text1": "AW",
             "text2": "24",
             "subtitle": "Sale is live",
