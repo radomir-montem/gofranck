@@ -60,9 +60,9 @@
         "slide_Nhh7Ca"
       ],
       "settings": {
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 3,
-        "enable_arrow": false
+        "enable_arrow": true
       }
     },
     "16578772844ecc4b0e": {
