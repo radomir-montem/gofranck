@@ -27,6 +27,7 @@
         },
         "slide_7cjbAa": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DSCF0072.jpg",
             "mobile_image": "shopify://shop_images/DSCF0072.jpg",
@@ -41,6 +42,7 @@
         },
         "slide_Nhh7Ca": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DSCF0072.jpg",
             "mobile_image": "shopify://shop_images/DSCF0072.jpg",
