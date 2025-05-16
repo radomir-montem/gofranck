@@ -106,6 +106,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify://shop_images/3_GF_FAVICON_2024-01-01.png",
     "currency_code_enabled": false,
+    "cart_type": "drawer",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
