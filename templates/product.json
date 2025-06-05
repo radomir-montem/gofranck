@@ -43,6 +43,33 @@
         "selleasy_lb_upsell_widget_pal_JBhibM": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pal/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
+        },
+        "collapsible_tab_3cnnR7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_rTw9WT": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.product_specifications | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_cwdndF": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "none",
+            "content": "<p><strong>The Netherlands & Europe 1</strong>: FREE SHIPPING<br/>Belgium, Germany, Luxembourg and The Netherlands<br/><br/><strong>Europe 2</strong>: €6,95<br/>France, Monaco<br/><br/><strong>Europe 3</strong>: €9,95<br/>Andorra, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, Greece, Hungary, Iceland, Italy, Ireland, Latvia, Lithuania, Norway, Poland, Portugal, Romania, San Marino, Slovenia, Sweden, Switzerland, Spain, Turkey, Vatican City, United Kingdom<br/><br/><strong>Rest of the world</strong>: €18.50<br/>Additional import duties will be added for shipments outside the EU, costs vary per country. Please check your local customs regulations for price indication.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -51,7 +78,10 @@
         "7373c105-9cde-43b7-a43f-ed518d93056f",
         "d160fe4a-74eb-483a-95dc-809bf651e66b",
         "a2b2e0b4-ef70-4781-a70f-a0a601d174aa",
-        "selleasy_lb_upsell_widget_pal_JBhibM"
+        "selleasy_lb_upsell_widget_pal_JBhibM",
+        "collapsible_tab_3cnnR7",
+        "collapsible_tab_rTw9WT",
+        "collapsible_tab_cwdndF"
       ],
       "settings": {}
     },
