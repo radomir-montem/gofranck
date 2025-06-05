@@ -85,38 +85,6 @@
       ],
       "settings": {}
     },
-    "efbaab58-9f91-4c29-8fc4-8986ee14049e": {
-      "type": "go-main-product-page-information",
-      "blocks": {
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-description-1": {
-          "type": "description",
-          "settings": {
-            "description_link_title": "description"
-          }
-        },
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-specifications-1": {
-          "type": "specifications",
-          "settings": {
-            "specifications_link_title": "Specifications"
-          }
-        },
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-shipping-1": {
-          "type": "shipping",
-          "settings": {
-            "shipping_information_link_title": "Shipping",
-            "shipping_information": "<p><strong>The Netherlands & Europe 1</strong>: FREE SHIPPING<br/>Belgium, Germany, Luxembourg and The Netherlands<br/><br/><strong>Europe 2</strong>: €6,95<br/>France, Monaco<br/><br/><strong>Europe 3</strong>: €9,95<br/>Andorra, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, Greece, Hungary, Iceland, Italy, Ireland, Latvia, Lithuania, Norway, Poland, Portugal, Romania, San Marino, Slovenia, Sweden, Switzerland, Spain, Turkey, Vatican City, United Kingdom<br/><br/><strong>Rest of the world</strong>: €18.50<br/>Additional import duties will be added for shipments outside the EU, costs vary per country. Please check your local customs regulations for price indication.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-description-1",
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-specifications-1",
-        "template--15961134792884__efbaab58-9f91-4c29-8fc4-8986ee14049e-shipping-1"
-      ],
-      "settings": {
-        "product": ""
-      }
-    },
     "1658149516ba83ec13": {
       "type": "go-anatomy-home-page",
       "settings": {
@@ -175,7 +143,6 @@
   },
   "order": [
     "main",
-    "efbaab58-9f91-4c29-8fc4-8986ee14049e",
     "1658149516ba83ec13",
     "16941635382e471427",
     "3104a5af-8cb2-44fc-85d0-47ea589da657",
