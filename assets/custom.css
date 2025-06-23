@@ -171,3 +171,9 @@
     font-size: 15px;
     counter-reset: var(--black-2);
 }
+
+@media (min-width: 990px) {
+  #shopify-section-header {
+    height: auto !important;
+  }
+}
