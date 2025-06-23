@@ -173,7 +173,7 @@
 }
 
 @media (min-width: 990px) {
-  #shopify-section-header {
+  #shopify-section-header .header {
     height: auto !important;
   }
 }
