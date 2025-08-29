@@ -2911,3 +2911,20 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+.header__icons .jdgm-widget.jdgm-all-reviews-text.jdgm-all-reviews-text--style-branded {
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 0 !important;
+}
+
+.header__icons .jdgm-all-reviews-text--style-branded .jdgm-all-reviews-rating {
+  height: 20px !important;
+} 
+
+@media (max-width: 768px) {
+  .header__icons .jdgm-all-reviews-text--style-branded .jdgm-all-reviews-rating:before,
+  .header__icons .jdgm-all-reviews-text--style-branded .jdgm-all-reviews-rating__score {
+    margin-right: 4px;
+  }
+}
