@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_slideshow_FkHRjA": {
@@ -15,37 +6,37 @@
         "slide_TrzDzf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/HR_DSCF9930_a464d053-4072-4920-8400-2e16be57ee15.jpg",
-            "text1": "SS",
+            "image": "shopify:\/\/shop_images\/GF_Green_11.06_2025_-_JSGG-21.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/phone_GF_Green_11.06_2025_-_JSGG-21.jpg",
+            "text1": "AW",
             "text2": "25",
-            "subtitle": "SALE IS LIVE",
+            "subtitle": "",
             "button_1_text": "WOMEN",
-            "url_1": "shopify://collections/spring-summer-2025-women",
+            "url_1": "shopify:\/\/collections\/autumn-winter-2025-women",
             "button_2_text": "MEN",
-            "url_2": "shopify://collections/spring-summer-2025-men"
+            "url_2": "shopify:\/\/collections\/autumn-winter-2025-men"
           }
         },
         "slide_7cjbAa": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/DSCF0072.jpg",
-            "mobile_image": "shopify://shop_images/DSCF0072.jpg",
-            "text1": "SS",
+            "image": "shopify:\/\/shop_images\/GF_Check_11.06_2025_-_JSGG-12.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/men_phoneGF_Green_11.06_2025_-_JSGG-21.jpg",
+            "text1": "AW",
             "text2": "25",
             "subtitle": "",
             "button_1_text": "WOMEN",
-            "url_1": "",
-            "button_2_text": "Button 2",
-            "url_2": ""
+            "url_1": "shopify:\/\/collections\/autumn-winter-2025-women",
+            "button_2_text": "MEN",
+            "url_2": "shopify:\/\/collections\/autumn-winter-2025-men"
           }
         },
         "slide_Nhh7Ca": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/DSCF0072.jpg",
-            "mobile_image": "shopify://shop_images/DSCF0072.jpg",
+            "image": "shopify:\/\/shop_images\/DSCF0072.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSCF0072.jpg",
             "text1": "SS",
             "text2": "24",
             "subtitle": "Sale is live",
@@ -72,27 +63,27 @@
       "disabled": true,
       "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/HR_DSCF9930_a464d053-4072-4920-8400-2e16be57ee15.jpg",
+        "image": "shopify:\/\/shop_images\/HR_DSCF9930_a464d053-4072-4920-8400-2e16be57ee15.jpg",
         "text1": "SS",
         "text2": "25",
         "subtitle": "",
         "button_1_text": "WOMEN",
-        "url_1": "shopify://collections/spring-summer-2025-women",
+        "url_1": "shopify:\/\/collections\/spring-summer-2025-women",
         "button_2_text": "MEN",
-        "url_2": "shopify://collections/spring-summer-2025-men"
+        "url_2": "shopify:\/\/collections\/spring-summer-2025-men"
       }
     },
     "1657877722c613bc6f": {
       "type": "go-double-image",
       "settings": {
-        "image_1": "shopify://shop_images/GOFRANCK_SS25_BRONTE_TAN_1_copy.jpg",
+        "image_1": "shopify:\/\/shop_images\/GF_Check_11.06_2025_-_JSGG-19.jpg",
         "header_1_text": "WOMEN",
         "button_1_text": "SHOP ALL",
-        "url_1": "shopify://collections/spring-summer-2025-women",
-        "image_2": "shopify://shop_images/GOFRANCK_SS25_GUNTHER_ICERBERG_GREEN_1_7fd08f64-ac17-4419-86c4-bd8cf108dacf.jpg",
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025-women",
+        "image_2": "shopify:\/\/shop_images\/GF_Check_11.06_2025_-_JSGG-6.jpg",
         "header_2_text": "MEN",
         "button_2_text": "SHOP ALL",
-        "url_2": "shopify://collections/spring-summer-2025-men"
+        "url_2": "shopify:\/\/collections\/autumn-winter-2025-men"
       }
     },
     "16578778361135233e": {
@@ -100,21 +91,22 @@
       "settings": {
         "header": "ESSENTIAL OUTERPROOFS",
         "image_aspect_ratio": 75,
-        "product_1": "abel-brown-rice",
-        "product_2": "bronte-tan",
-        "product_3": "elizeh-deep-black-brown-rice",
-        "product_4": "weatherly-tan",
+        "product_1": "aarush-gray-green",
+        "product_2": "ozone-castor-grey",
+        "product_3": "cold-winter-deep-black-2",
+        "product_4": "indra-bronze-green",
         "button_1_text": "FULL COLLECTION",
-        "url_1": "shopify://collections/autumn-winter-2024-shop-all-products"
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025"
       }
     },
     "1657877846f892c394": {
       "type": "go-anatomy-home-page",
+      "disabled": true,
       "settings": {
         "header": "The anatomy of your",
         "show_name": true,
         "product": "rain-eater-niagara-blue",
-        "icon_guide_url": "shopify://pages/icon-guide"
+        "icon_guide_url": "shopify:\/\/pages\/icon-guide"
       }
     },
     "165787646517aa719f": {
@@ -126,12 +118,12 @@
         "header_text": "OUR PHILOSOPHY",
         "paragraph_text": "It’s the moments outside where life takes form and plans are achieved. Whilst cycling at top speed through the city on hasty commutes to work, meeting up with friends or simply getting some groceries. In these fleeting moments from A to B you suddenly find yourself exposed to the weather, may it be windy, wet and hailing or a soft breeze with a sudden burst of sun. Whatever crosses that path, you keep going. You won’t change the weather, but you can adapt and even play with it, you just need the right gear. We like to call them OUTERPROOFS.",
         "button_1_text": "SHOP OUR COLLECTION",
-        "url_1": "shopify://collections/autumn-winter-2024-shop-all-products",
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025",
         "button_2_text": "SUSTAINABILITY",
-        "url_2": "shopify://pages/sustainability",
-        "image_1": "shopify://shop_images/DSCF5273.jpg",
-        "image_2": "shopify://shop_images/DSCF5421_409d7b63-972b-489c-bc20-34ce4969d087.jpg",
-        "image_3": "shopify://shop_images/DSCF6318.jpg"
+        "url_2": "shopify:\/\/pages\/sustainability",
+        "image_1": "shopify:\/\/shop_images\/DSCF5273.jpg",
+        "image_2": "shopify:\/\/shop_images\/DSCF5421_409d7b63-972b-489c-bc20-34ce4969d087.jpg",
+        "image_3": "shopify:\/\/shop_images\/DSCF6318.jpg"
       }
     },
     "1657878312f2f74b25": {
@@ -147,17 +139,17 @@
         "twentyk_paragraph": "Rainproof and waterproof under medium-high pressure. Ideal for heavy rain, wet snow, medium-high pressure.",
         "button_1_text": "WOMEN",
         "photo_header": "20K COLUMN PRESSURE",
-        "url_1": "shopify://collections/autumn-winter-2024-women",
+        "url_1": "shopify:\/\/collections\/autumn-winter-2025-women",
         "button_2_text": "MEN",
-        "url_2": "shopify://collections/autumn-winter-2024-men",
-        "image_1": "shopify://shop_images/GOFRANCK_SS25_MILD_NIAGARA_BLUE_7_f20edaa8-a3d2-4412-a2c2-42f699f83443.jpg"
+        "url_2": "shopify:\/\/collections\/autumn-winter-2025-men",
+        "image_1": "shopify:\/\/shop_images\/GOFRANCK_SS25_MILD_NIAGARA_BLUE_7.png"
       }
     },
     "17309731309d88e76d": {
       "type": "apps",
       "blocks": {
         "klaviyo_email_marketing_sms_form_embed_block_AMJFjd": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
             "formId": "Y8U7L7"
           }

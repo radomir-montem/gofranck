@@ -1,12 +1,5 @@
 {
   "sections": {
-    "166203872600f0f748": {
-      "type": "go-hero-without-buttons",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/DSCF8268.jpg",
-        "header_text": "GET IN TOUCH"
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -34,7 +27,6 @@
     }
   },
   "order": [
-    "166203872600f0f748",
     "main",
     "16620386046aedcf59",
     "form"

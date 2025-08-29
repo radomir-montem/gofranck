@@ -2454,6 +2454,7 @@ li {
   align-items: flex-start;
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .go-h2-title {
@@ -4469,7 +4470,7 @@ li {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 400px;
   max-height: 100%;
   display: flex;
@@ -6853,4 +6854,20 @@ li {
   #w-node-f6c84b49-5ac9-faa1-31af-ceecbafdd81c-1658e309, #w-node-_5b1d9c26-eff0-fea9-23e2-c4f947be1128-1658e309, #w-node-_26558260-d217-b376-863d-9e2611042ee7-1658e309, #w-node-ff455fc1-527e-f5d5-0486-d98d5848e8a8-1658e309 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
+}
+
+.sg-product-page-image {
+  position: relative;
+  height: auto !important;
+  aspect-ratio: 4 / 5;
+}
+
+.sg-product-page-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
 }

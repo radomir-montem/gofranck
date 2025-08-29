@@ -275,7 +275,7 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    {%  section 'contact-widget' %}
+    {% comment %} {%  section 'contact-widget' %} {% endcomment %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       
       {{ content_for_layout }}
@@ -426,6 +426,7 @@
     .jdgm-all-reviews-rating__stars {
       line-height: 1 !important;
       margin: 0 !important;
+      transform: translateY(-3px);
     }
     .jdgm-all-reviews-rating__stars {
       line-height: 1.1 !important;
