@@ -221,3 +221,18 @@ sticky-atc.hidden {
     transform: translateY(-50%, 100%);
     transition: 0.55s ease-in-out;
 }
+
+.sticky-atc-button {
+  transform: scale3d(1none,1none,1none);
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  background-color: #000;
+  flex: none;
+  width: 100%;
+  height: 54px;
+  padding: 0 20px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  transition: transform .2s ease-in-out, opacity .2s;
+}
