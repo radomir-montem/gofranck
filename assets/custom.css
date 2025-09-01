@@ -188,6 +188,12 @@
   margin-right: 4px;
 }
 
+.sg-product-page-button div.icon svg,
+.sticky-atc-button div.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 sticky-atc {
   position: fixed;
   bottom: 0;
