@@ -59,7 +59,7 @@
           "type": "question",
           "settings": {
             "question": "I haven’t received my order yet?",
-            "answer": "<p>There could be multiple reasons why you still haven’t received your order, please contact us or DHL with your track and trace number.</p>"
+            "answer": "<p>There could be multiple reasons why you still haven’t received your order, please contact us or the shipping service with your track and trace number.</p>"
           }
         },
         "question_VUihQ3": {
