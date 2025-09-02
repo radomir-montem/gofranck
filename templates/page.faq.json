@@ -90,7 +90,7 @@
           "type": "question",
           "settings": {
             "question": "I’ve ordered the wrong size; can I exchange it?",
-            "answer": "<p>We offer free exchanges ☺ For more details you can find our return policy here.</p>"
+            "answer": "<p>We offer free exchanges ☺ For more details you can find our return policy <a href=\"https://gofranck.com/policies/refund-policy\" title=\"https://gofranck.com/policies/refund-policy\">here</a>.</p>"
           }
         },
         "question_bTKwhR": {
