@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,10 +21,10 @@
       "type": "go-image-with-text",
       "settings": {
         "switch_image_and_paragraph": false,
-        "image": "shopify:\/\/shop_images\/GF_Re-Edit_April_2025-241.jpg",
+        "image": "shopify://shop_images/GF_Re-Edit_April_2025-241.jpg",
         "header_text": "",
         "over_image_text": "",
-        "paragraph": "<p>GOFRANCK OUTERPROOFS is an Amsterdam based brand specialized in waterproof outerwear. GOFRANCK, meaning honest, is the foundation of who we are. We want to become sustainable and have made it there with some of our materials, biodegradable insulation and <a href=\"\/pages\/sustainability\" title=\"sustainability\">THE 5 YEAR CIRCULARITY PLAN<\/a>. By only working with certified suppliers we can guarantee that all the people involved in making our outerwear work in safe conditions, get fair pay and work normal hours. Choosing conscious means not looking away, controlling that conditions are upheld with annual reports and knowing that what you buy really matters. But there’s more work to be done, which we want to share with you along the way.<\/p>"
+        "paragraph": "<p>GOFRANCK OUTERPROOFS™ is an Amsterdam based brand specialized in waterproof outerwear. GOFRANCK, meaning honest, is the foundation of who we are. We want to become sustainable and have made it there with some of our materials, biodegradable insulation and <a href=\"/pages/sustainability\" title=\"sustainability\">THE 5 YEAR CIRCULARITY PLAN</a>. By only working with certified suppliers we can guarantee that all the people involved in making our outerwear work in safe conditions, get fair pay and work normal hours. Choosing conscious means not looking away, controlling that conditions are upheld with annual reports and knowing that what you buy really matters. But there’s more work to be done, which we want to share with you along the way.</p>"
       }
     },
     "16618631194bec61e7": {
@@ -23,20 +32,20 @@
       "disabled": true,
       "settings": {
         "switch_image_and_paragraph": true,
-        "image": "shopify:\/\/shop_images\/GFR_1361.jpg",
+        "image": "shopify://shop_images/GFR_1361.jpg",
         "header_text": "THE GOFRANCK PHILOSOPHY",
         "over_image_text": "",
-        "paragraph": "<p>It’s the moments outside where life takes form and plans are achieved. Whilst cycling at top speed through the city on hasty commutes to work, meeting up with friends or simply getting some groceries. In these fleeting moments from A to B you suddenly find yourself exposed to the weather, may it be windy, wet and hailing or a soft breeze with a sudden burst of sun. Whatever crosses that path, you keep going. You won’t change the weather, but you can adapt and even play with it, you just need the right gear. We like to call them OUTERPROOFS.<\/p>"
+        "paragraph": "<p>It’s the moments outside where life takes form and plans are achieved. Whilst cycling at top speed through the city on hasty commutes to work, meeting up with friends or simply getting some groceries. In these fleeting moments from A to B you suddenly find yourself exposed to the weather, may it be windy, wet and hailing or a soft breeze with a sudden burst of sun. Whatever crosses that path, you keep going. You won’t change the weather, but you can adapt and even play with it, you just need the right gear. We like to call them OUTERPROOFS.</p>"
       }
     },
     "1661863185728785db": {
       "type": "go-image-with-text",
       "settings": {
         "switch_image_and_paragraph": true,
-        "image": "shopify:\/\/shop_images\/GF_Re-Edit_April_2025-233.jpg",
+        "image": "shopify://shop_images/GF_Re-Edit_April_2025-233.jpg",
         "header_text": "OUTERPROOFS",
         "over_image_text": "Do your thing, whatever the forecast.",
-        "paragraph": "<p>Each GOFRANCK is meticulously designed with purpose in mind. People on the GO have more exciting things to do than check the forecast. Why choose between an item you love, that might not suit the weather, or a more practical option which portrays just that: practicality. And where does your personal style come to play? We believe that with smart design and high-quality technical materials you can have the best of both worlds. Hello OUTERPROOFS ;-)<br\/>Discover our collection of waterproof parka's, puffer jackets and more to get you through rainy days and sunny moments without breaking a sweat with smart solutions such as detachable linings, back pack straps and modular features.<\/p>"
+        "paragraph": "<p>Each GOFRANCK is meticulously designed with purpose in mind. People on the GO have more exciting things to do than check the forecast. Why choose between an item you love, that might not suit the weather, or a more practical option which portrays just that: practicality. And where does your personal style come to play? We believe that with smart design and high-quality technical materials you can have the best of both worlds. Hello OUTERPROOFS ;-)<br/>Discover our collection of waterproof parka's, puffer jackets and more to get you through rainy days and sunny moments without breaking a sweat with smart solutions such as detachable linings, back pack straps and modular features.</p>"
       }
     },
     "1661863219d4be3502": {
@@ -46,10 +55,10 @@
       ],
       "settings": {
         "switch_image_and_paragraph": true,
-        "image": "shopify:\/\/shop_images\/GOFRANCK-sustainable-outerproofs-logo-2024-waterproof-sustainable-jackets.png",
+        "image": "shopify://shop_images/GOFRANCK-sustainable-outerproofs-logo-2024-waterproof-sustainable-jackets.png",
         "header_text": "SUSTAINABILITY",
         "over_image_text": "",
-        "paragraph": "<p>What you buy matters, and what we make too. From design, material sourcing, production and logistics. Even the smallest steps make a difference. Our goal is to become climate positive, and we’ll be frank about it, we’re not there yet. But we have made decisive steps towards slow fashion and greener production. Read more about our sustainability steps and goals on our sustainability page. <\/p>"
+        "paragraph": "<p>What you buy matters, and what we make too. From design, material sourcing, production and logistics. Even the smallest steps make a difference. Our goal is to become climate positive, and we’ll be frank about it, we’re not there yet. But we have made decisive steps towards slow fashion and greener production. Read more about our sustainability steps and goals on our sustainability page. </p>"
       }
     },
     "c820685a-6b82-4675-b12e-c1fdaffb06fd": {
@@ -58,9 +67,9 @@
         "template--15961135087796__c820685a-6b82-4675-b12e-c1fdaffb06fd-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GOFRANCK_AW23_EYE_SINGLE_CHECK_TRUE_BLUE_DETAIL2.jpg",
+            "image": "shopify://shop_images/GOFRANCK_AW23_EYE_SINGLE_CHECK_TRUE_BLUE_DETAIL2.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -69,7 +78,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -78,7 +87,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
