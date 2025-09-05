@@ -183,7 +183,7 @@
         "question_VMmpdD": {
           "type": "question",
           "settings": {
-            "question": "Something is wrong with my GOFRANCK item.",
+            "question": "Something is wrong with my GOFRANCK item",
             "answer": "<p>If something is wrong with the quality of your item or you want to make a warranty claim, please send us an email at <a href=\"mailto:hello@gofranck.com\" target=\"_blank\">hello@gofranck.com</a> with photos of the defect, what style and size jacket you have and where you bought it and we will help you as soon as possible.</p>"
           }
         }
