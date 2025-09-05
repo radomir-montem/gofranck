@@ -66,7 +66,7 @@
           "type": "question",
           "settings": {
             "question": "When will my order be shipped?",
-            "answer": "<p>We aim to ship your order within two business days after placing the order. However, depending on your location, it can take a bit longer. You will get a shipping notification with tracking details, if you didn’t get there or you haven’t received your order within a week, please reach out to us.</p>"
+            "answer": "<p>We aim to ship your order within two business days after placing the order. However, depending on the demand, it can take a bit longer. After your parcel is sent out, you will get a shipping notification with tracking details. If you didn’t get there or you haven’t received your order within a week, please reach out to us.</p>"
           }
         }
       },
