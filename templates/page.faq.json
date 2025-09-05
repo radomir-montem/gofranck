@@ -138,7 +138,7 @@
           "type": "question",
           "settings": {
             "question": "How can I return my order?",
-            "answer": "<p>You can find more details about our refund policy<a href=\"https://gofranck.com/pages/return-policy\" target=\"_blank\">here </a>or on the return form included in your parcel.<br/>Please do note that the item you want to return fit the criteria mentioned in our return policy to be eligible for a refund.</p>"
+            "answer": "<p>You can find more details about our refund policy <a href=\"https://gofranck.com/pages/return-policy\" target=\"_blank\">here </a>or on the return form included in your parcel.<br/>Please do note that the item you want to return fits the criteria mentioned in our return policy to be eligible for a refund.</p>"
           }
         },
         "question_7mmHhV": {
