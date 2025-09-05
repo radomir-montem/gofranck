@@ -159,7 +159,7 @@
           "type": "question",
           "settings": {
             "question": "The item I’m looking for is sold out, will it return?",
-            "answer": "<p>All our stock is listed in our webstore, so if it is not available on our webstore, the item is sold out. Throughout the season there are some restocks, but this depends for example of returns from retailers or remaining inventory. This also means that even thought there might be a restock, not every item will be included. If you want to know if there are plans for a restock of the item you’re looking for, please contact us!</p>"
+            "answer": "<p>All our stock is listed in our webstore, so if it is not available on our webstore, the item is sold out. Throughout the season there are some restocks, but this depends, for example, on returns from retailers or remaining inventory. This also means that even thought there might be a restock, not every item will be included. If you want to know if there are plans for a restock of the item you’re looking for, please contact us!</p>"
           }
         }
       },
