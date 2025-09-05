@@ -45,7 +45,7 @@
           "type": "question",
           "settings": {
             "question": "How much is shipping?",
-            "answer": "<p>The shipping costs are different per area you’re in. For more information you can find our shipping policy <a href=\"https://gofranck.com/pages/lookbook\" target=\"_blank\">here</a>.</p>"
+            "answer": "<p>Shipping costs vary depending on your location. For more information you can find our shipping policy <a href=\"https://gofranck.com/pages/lookbook\" target=\"_blank\">here</a>.</p>"
           }
         },
         "question_47pHMD": {
