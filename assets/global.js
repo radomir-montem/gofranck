@@ -901,3 +901,19 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+
+window.addEventListener('load', function(){
+  let applyBtn = document.querySelector("#apply-discount-btn");
+  let discountCodeInput = document.querySelector("#discount-code");
+
+  applyBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      applyDiscount(discountCodeInput.value);
+  });
+
+  function applyDiscount(code) {
+    const path = window.location.pathname;
+    window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
+  }
+
+})

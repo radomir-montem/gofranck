@@ -20,7 +20,7 @@
   %}
 {% endcomment %}
 
-<div class="sg-product-page-image">
+<sg-pdp-image class="sg-product-page-image" style="background-image: url('{{ media | image_url: width: 1500 }}')">
   {{
     media | image_url: width: 1500 | image_tag:
     loading: 'lazy',
@@ -29,7 +29,7 @@
     widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
     alt: media.preview_image.alt | escape
   }}
-</div>
+</sg-pdp-image>
 
 {% comment %} LOOK FOR THE USAGE OF THE FIRST IMAGE DIFFERENCE {% endcomment %}
 {% comment %} {% if position == 1 %}

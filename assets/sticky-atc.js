@@ -22,8 +22,7 @@ class stickyAtc extends HTMLElement {
 
     onClickAtcButton(e) {
         e.preventDefault();
-        this.productInfo.scrollIntoView({ behavior: "smooth", block: "center" });
-        this.atcButtton.focus();
+        document.querySelector('product-form').scrollIntoView({ behavior: "smooth", block: "end" });
     }
 }
 

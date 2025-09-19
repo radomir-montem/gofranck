@@ -36,12 +36,12 @@
             </div>
           </div>
           {%- if settings.cart_drawer_collection != blank -%}
-            <div class="cart-drawer__collection">
+            {% comment %} <div class="cart-drawer__collection">
               {% render 'card-collection',
                 card_collection: settings.cart_drawer_collection,
                 columns: 1
               %}
-            </div>
+            </div> {% endcomment %}
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -248,6 +248,77 @@
           </div>
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
+        {% assign upsell_products_list = product.metafields.custom.upsell_products.value %}
+        {% if cart != empty and upsell_products_list != blank %}
+          {% assign count = 0 %}
+          {% for product in upsell_products_list %}
+            {% assign recommended_product = cart.items | where: 'product_id', product.id | first %}
+            {% if recommended_product != blank or count >= 1 or product.available == false %}
+              {% continue %}
+            {% endif %}
+            {% assign count = count | plus: 1 %}
+          {% endfor %}
+          {% if count > 0 %}
+            <div class="cart-upsell-products">
+              <h2 class="cart-upsell-header h6">You may also like</h2>
+              {% assign r_count = 0 %}
+              {% for product in upsell_products_list %}
+                {% assign recommended_product = cart.items | where: 'product_id', product.id | first %}
+                {% if recommended_product != blank or r_count >= 3 or product.available == false %}
+                  {% continue %}
+                {% endif %}
+                {% assign r_count = r_count | plus: 1 %}
+                <div class="cart-upsell-product__item">
+                  <div class="cart-upsell-product__wrapper">
+                    <a class="cart-upsell-product__img" href="{{ product.url }}">
+                      {{ product.featured_image | image_url: width: 100 | image_tag }}
+                    </a>
+                    <div class="cart-upsell-product__info">
+                      <h4 class="cart-upsell-product__title h6">
+                        <a href="{{ product.url }}">{{ product.title }}</a>
+                      </h4>
+                      <p class="cart-upsell-product__price">
+                        {{ product.price | money }}
+                      </p>
+                      <cart-upsell-form>
+                        {% form 'product', product, novalidate: 'novalidate', data-type: 'add-to-cart-form' %}
+                          {% assign current_variant = product.selected_or_first_available_variant %}
+                          {% unless product.has_only_default_variant %}
+                            <div class="cart-upsell-product__select">
+                              <label for="cart-upsell-product__select-{{ product.id }}">Size</label>
+                              <select id="cart-upsell-product__select-{{ product.id }}" name="id">
+                                {% for variant in product.variants %}
+                                  <option value="{{ variant.id }}" {% if variant.id == current_variant.id %}selected{% endif %} {% unless variant.available %}disabled{% endunless %}>{{ variant.title | split: ' / ' | last }}</option>
+                                {% endfor %}
+                              </select>
+                            </div>
+                          {% else %}
+                            <input type="hidden" name="id" value="{{ current_variant.id }}">
+                          {% endunless %}
+                            <button class="cart-upsell-product__button" type="submit" {% if current_variant.available == false %}disabled{% endif %}>
+                              <span>ADD</span>
+                              <div class="loading-overlay__spinner hidden">
+                                <svg
+                                  aria-hidden="true"
+                                  focusable="false"
+                                  role="presentation"
+                                  class="spinner"
+                                  viewBox="0 0 66 66"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                </svg>
+                              </div>
+                            </button>
+                        {% endform %}
+                      </cart-upsell-form>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endif %}
       </cart-drawer-items>
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
@@ -269,6 +340,10 @@
         <!-- Subtotals-->
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+          <div class="cart__discount">
+            <input type="text" class="discount_input" id="discount-code" placeholder="Discount code">
+            <button class="button button--primary apply_btn" id="apply-discount-btn">Apply</button>
+          </div>
           <div class="totals" role="status">
             <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
             <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>

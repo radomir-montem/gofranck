@@ -33,6 +33,9 @@
               height="24"
               alt=""
           ></a>
+          <span class="sg-product-page-image-grid__close">
+            {% render 'icon-close' %}
+            </span>
           <div class="sg-product-page-image-gradient"></div>
           <div class="sg-product-page-image-grid">
             {% comment %} loop over the product images and load the images {% endcomment %}
@@ -273,6 +276,118 @@
 
 {% render 'go-product-sticky-atc' %}
 <script src="{{ 'sticky-atc.js' | asset_url }}" defer="defer"></script>
+<script>
+
+  document.querySelector('.sg-product-page-image-grid__close').addEventListener('click', function(){
+    document.querySelector('.sg-product-page-hero').classList.remove('active')
+  })
+
+  class SgPdpImage extends HTMLElement {
+    constructor() {
+      super();
+      this.image = this.querySelector('img');
+      this.isZoomed = false;
+      this.isDragging = false;
+      this.isMoved = false;
+      this.startX = 0;
+      this.startY = 0;
+      this.translateX = 0;
+      this.translateY = 0;
+      this.scale = 3;
+
+      this.addEventListener('click', (e) => this.onClickWrapper(e));
+      this.image.addEventListener('click', (e) => this.onClick(e));
+      this.image.addEventListener('mousedown', (e) => this.onMouseDown(e));
+      this.image.addEventListener('mouseleave', (e) => this.onMouseLeave(e));
+      this.image.addEventListener('mouseup', (e) => this.onMouseUp(e));
+      this.image.addEventListener('mousemove', (e) => this.onMouseMove(e));
+    }
+
+    isActive() {
+      return document.querySelector('.sg-product-page-hero').classList.contains('active');
+    }
+
+    onClickWrapper(e) {
+      if(this.isActive() && !this.isMoved) {
+        document.querySelector('.sg-product-page-hero').classList.remove('active')
+      } else {
+        document.querySelector('.sg-product-page-hero').classList.add('active')
+        this.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+
+    onClick(e) {
+      if (this.isActive() && !this.isDragging && !this.isMoved && window.innerWidth > 768) {
+        e.stopPropagation();
+        if (!this.isZoomed) {
+          this.image.style.transform = `translate3d(${this.translateX}px, ${this.translateY}px, 0) scale(${this.scale})`;
+          this.image.style.cursor = 'grab';
+          this.isZoomed = true;
+          document.querySelector('.sg-product-page-image-grid').style.zIndex = '2';
+        } else {
+          this.image.style.transform = 'scale(1)';
+          this.image.style.cursor = 'zoom-in';
+          this.isZoomed = false;
+          this.startX = 0;
+          this.startY = 0;
+          this.translateX = 0;
+          this.translateY = 0;
+          document.querySelector('.sg-product-page-image-grid').style.zIndex = '1';
+        }
+        this.image.style.transition = '0.3s';
+      }
+    }
+
+    onMouseDown(e) {
+      if (this.isZoomed && this.isActive() && window.innerWidth > 768) {
+        e.preventDefault();
+        this.isDragging = true;
+        this.startX = e.pageX - this.translateX;
+        this.startY = e.pageY - this.translateY;
+        this.image.style.cursor = 'grabbing';
+        this.image.style.transition = 'none';
+        this.isMoved = false;
+      }
+    }
+
+    onMouseLeave(e) {
+      if (this.isZoomed && this.isActive() && window.innerWidth > 768) {
+        e.preventDefault();
+        this.isDragging = false;
+        this.image.style.cursor = 'grab';
+      }
+    }
+
+    onMouseUp(e) {
+      if (this.isZoomed && this.isActive() && window.innerWidth > 768) {
+        e.preventDefault();
+        this.isDragging = false;
+        this.image.style.cursor = 'grab';
+      }
+    }
+
+    onMouseMove(e) {
+      if (this.isZoomed && this.isDragging && this.isActive() && window.innerWidth > 768) {
+        e.preventDefault();
+        this.isMoved = true;
+        const maxTranslateX = ((this.image.height - (window.innerWidth - this.image.height))  * (this.scale - 1)) / 2;
+        const maxTranslateY = (this.image.height * (this.scale - 1)) / 2;
+
+        // Calculate new translation values
+        let x = e.pageX - this.startX;
+        let y = e.pageY - this.startY;
+
+        // Clamp translation values to boundaries
+        this.translateX = Math.min(Math.max(x, -maxTranslateX), maxTranslateX);
+        this.translateY = Math.min(Math.max(y, -maxTranslateY), maxTranslateY);
+        this.image.style.transform = `translate3d(${this.translateX}px, ${this.translateY}px, 0) scale(${this.scale})`;
+        this.image.style.transition = 'none';
+      }
+    }
+  }
+
+  customElements.define('sg-pdp-image', SgPdpImage);
+</script>
 
 {% schema %}
 {

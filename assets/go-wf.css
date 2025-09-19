@@ -4646,6 +4646,7 @@ li {
   min-width: 500px;
   height: 100%;
   overflow: hidden;
+  display: block;
 }
 
 .sg-product-page-imagery {
@@ -6870,4 +6871,5 @@ li {
   left: 0;
   object-fit: cover;
   object-position: center;
+  cursor: zoom-in;
 }
