@@ -260,7 +260,7 @@
           {% endfor %}
           {% if count > 0 %}
             <div class="cart-upsell-products">
-              <h2 class="cart-upsell-header h6">You may also like</h2>
+              <h2 class="cart-upsell-header h6 uppercase">You may also like</h2>
               {% assign r_count = 0 %}
               {% for product in upsell_products_list %}
                 {% assign recommended_product = cart.items | where: 'product_id', product.id | first %}
