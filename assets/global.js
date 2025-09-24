@@ -912,6 +912,7 @@ window.addEventListener('load', function(){
   });
 
   function applyDiscount(code) {
+    if(!code) return;
     const path = window.location.pathname;
     window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
   }
