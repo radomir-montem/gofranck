@@ -250,6 +250,7 @@ sticky-atc.hidden {
   color: #000;
   margin: 0;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .cart-upsell-products {
