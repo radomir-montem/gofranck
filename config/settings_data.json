@@ -114,6 +114,7 @@
         "blocks": {
           "announcement_frpfxA": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Worldwide Free Shipping Weekend",
               "text_alignment": "center",
