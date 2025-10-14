@@ -313,11 +313,10 @@ cart-upsell-form form {
   display: flex;
   width: 100%;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .cart-upsell-product__select {
-  width: 40%;
   font-size: 12px;
 }
 
