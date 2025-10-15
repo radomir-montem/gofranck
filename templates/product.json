@@ -85,6 +85,21 @@
       ],
       "settings": {}
     },
+    "176052968369d1d93f": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_widget_bl_TBEXXk": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_widget_bl_TBEXXk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1658149516ba83ec13": {
       "type": "go-anatomy-home-page",
       "settings": {
@@ -144,30 +159,15 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "176052968369d1d93f": {
-      "type": "apps",
-      "blocks": {
-        "selleasy_lb_upsell_widget_bl_TBEXXk": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "selleasy_lb_upsell_widget_bl_TBEXXk"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
+    "176052968369d1d93f",
     "1658149516ba83ec13",
     "16941635382e471427",
     "3104a5af-8cb2-44fc-85d0-47ea589da657",
     "product-recommendations",
-    "173097353250306966",
-    "176052968369d1d93f"
+    "173097353250306966"
   ]
 }
