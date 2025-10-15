@@ -101,6 +101,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
@@ -142,6 +144,21 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "176052968369d1d93f": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_widget_bl_TBEXXk": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_widget_bl_TBEXXk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -150,6 +167,7 @@
     "16941635382e471427",
     "3104a5af-8cb2-44fc-85d0-47ea589da657",
     "product-recommendations",
-    "173097353250306966"
+    "173097353250306966",
+    "176052968369d1d93f"
   ]
 }
