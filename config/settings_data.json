@@ -114,13 +114,12 @@
         "blocks": {
           "announcement_frpfxA": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Worldwide Free Shipping Weekend",
+              "text": "Free shipping in NL, BE, DE, LU",
               "text_alignment": "center",
               "color": "#000000",
               "text_color": "#ffffff",
-              "link": ""
+              "link": "shopify://collections/autumn-winter-2025"
             }
           }
         },
