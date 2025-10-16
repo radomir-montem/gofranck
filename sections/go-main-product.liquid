@@ -281,7 +281,20 @@
 <script src="{{ 'sticky-atc.js' | asset_url }}" defer="defer"></script>
 <script>
 
-  <script></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkLbWidget = setInterval(() => {
+        const widget = document.querySelector('lb-upsell-widget');
+        if(widget) {
+          clearInterval(checkLbWidget);
+          console.log('here');
+        }
+      }, 500);
+      setTimeout(() => {
+        clearInterval(checkLbWidget);
+      }, 10000);
+    });
+  </script>
 
   document.querySelector('.sg-product-page-image-grid__close').addEventListener('click', function(){
     document.querySelector('.sg-product-page-hero').classList.remove('active')
