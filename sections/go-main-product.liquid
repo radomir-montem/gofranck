@@ -398,7 +398,9 @@
       const widget = document.querySelector('lb-upsell-widget');
       if(widget) {
         clearInterval(checkLbWidget);
-        console.log('here');
+        if(window.innerWidth > 767) {
+          document.querySelector('.sg-lb-widget-bl').appendChild(widget);
+        }
       }
     }, 500);
     setTimeout(() => {
