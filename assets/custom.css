@@ -476,3 +476,7 @@ cart-upsell-form form {
 .cart-item cart-remove-button {
   margin: 0 !important;
 }
+
+.sg-product-page-image-block-wrapper {
+  width: 100%;
+}
