@@ -395,13 +395,11 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const checkLbWidget = setInterval(() => {
-      const widget = document.querySelector('lb-upsell-widget');
+      const widget = document.querySelector('.lb-widget-bl');
       if(widget) {
         clearInterval(checkLbWidget);
         if(window.innerWidth > 767) {
-          setTimeout(() => {
             document.querySelector('.sg-lb-widget-bl').appendChild(widget);
-          }, 10000);
         }
       }
     }, 500);
