@@ -480,3 +480,7 @@ cart-upsell-form form {
 .sg-product-page-image-block-wrapper {
   width: 100%;
 }
+
+.sg-product-page-image-block-wrapper .sg-lb-widget-bl {
+  padding-right: 40px;
+}
