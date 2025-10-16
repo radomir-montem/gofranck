@@ -399,7 +399,9 @@
       if(widget) {
         clearInterval(checkLbWidget);
         if(window.innerWidth > 767) {
-          document.querySelector('.sg-lb-widget-bl').appendChild(widget);
+          setTimeout(() => {
+            document.querySelector('.sg-lb-widget-bl').appendChild(widget);
+          }, 10000);
         }
       }
     }, 500);
