@@ -314,6 +314,7 @@ cart-upsell-form form {
   width: 100%;
   align-items: flex-end;
   justify-content: flex-start;
+  gap: 10px;
 }
 
 .cart-upsell-product__select {
