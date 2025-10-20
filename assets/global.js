@@ -890,9 +890,9 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
-    console.log('heree');
     setTimeout(() => {
       const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+      console.log('heree', fieldsets);
       fieldsets.forEach(fieldset => {
         fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
           input.classList.toggle('disabled', input.disabled);
