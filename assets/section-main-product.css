@@ -216,15 +216,6 @@ fieldset.product-form__input .form__label {
   border-radius: 0px;
 }
 
-.product-form__input input[type='radio'] + label:hover {
-  background-color: #e6e6e6;
-}
-
-.product-form__input input[type='radio']:checked + label {
-  background-color: #f3f3f3;
-  border: 2px solid black;
-}
-
 @media screen and (forced-colors: active) {
   .product-form__input input[type=radio]:checked + label {
     text-decoration: underline;
@@ -235,11 +226,21 @@ fieldset.product-form__input .form__label {
   background-color: rgba(var(--color-background), 0.3);
 }
 
-.product-form__input input[type='radio']:disabled + label {
+.product-form__input input[type='radio'].disabled + label {
   border-color: rgba(var(--color-foreground), 0.1);
   color: rgba(var(--color-foreground), 0.4);
   text-decoration: line-through;
 }
+
+.product-form__input input[type='radio'] + label:hover {
+  background-color: #e6e6e6;
+}
+
+.product-form__input input[type='radio']:checked + label {
+  background-color: #f3f3f3;
+  border: 2px solid black;
+}
+
 .product-form__input input[type='radio']:focus-visible + label {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
