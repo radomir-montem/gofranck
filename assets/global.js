@@ -890,6 +890,7 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
+    console.log('heree');
     setTimeout(() => {
       const fieldsets = Array.from(this.querySelectorAll('fieldset'));
       fieldsets.forEach(fieldset => {
