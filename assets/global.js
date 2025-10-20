@@ -890,6 +890,15 @@ customElements.define('variant-selects', VariantSelects);
 class VariantRadios extends VariantSelects {
   constructor() {
     super();
+    setTimeout(() => {
+      const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+      fieldsets.forEach(fieldset => {
+        fieldset.querySelectorAll('input[type="radio"]').forEach(input => {
+          input.classList.toggle('disabled', input.disabled);
+          input.disabled = false;
+        });
+      });
+    }, 1000);
   }
 
   updateOptions() {
