@@ -81,7 +81,7 @@
         </div>
       {% endif %}
       <fieldset
-        class="js product-form__input"
+        class="js product-form__input {% if product.handle == 'gift-card' %}gift-card{% endif %}"
         {% if option.name == 'Color' %}
           style="display:none"
         {% endif %}
