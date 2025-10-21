@@ -1217,3 +1217,13 @@ a.product__text {
     height: 47px;
   }
 }
+
+.gift-card.product-form__input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gift-card.product-form__input input[type=radio] + label {
+  width: auto;
+  padding: 0 10px;
+}
