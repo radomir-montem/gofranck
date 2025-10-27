@@ -71,7 +71,7 @@
                 {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color %}
               {% when 'add-buttons' %}
                 {% if product.id == 9904066986326 %}
-                  <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+                  <div class="product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
                     <label class="form__label" for="Quantity-{{ section.id }}">
                       {{ 'products.product.quantity.label' | t }}
                     </label>
