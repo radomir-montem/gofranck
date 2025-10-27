@@ -70,6 +70,32 @@
               {% when 'variant-selectors' %}
                 {% render 'go-product-page-variant-selectors', product: product, product_form_id: product_form_id , section_id: section.id, product_color: product_color %}
               {% when 'add-buttons' %}
+                {% if product.id == 9904066986326 %}
+                  <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+                    <label class="form__label" for="Quantity-{{ section.id }}">
+                      {{ 'products.product.quantity.label' | t }}
+                    </label>
+
+                    <quantity-input class="quantity">
+                      <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <input class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          id="Quantity-{{ section.id }}"
+                          min="1"
+                          value="1"
+                          form="{{ product_form_id }}"
+                        >
+                      <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
+                  </div>
+                {% endif %}
                 {% render 'go-product-page-add-buttons', product: product, product_form_id: product_form_id , section_id: section.id, coming_soon: block.settings.coming_soon, coming_soon_text: block.settings.coming_soon_text, show_dynamic_checkout: block.settings.show_dynamic_checkout %}
               {% when 'usp-content' %}
                 {% render 'go-product-page-usp-content', product: product, block: block %}
