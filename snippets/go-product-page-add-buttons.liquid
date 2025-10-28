@@ -87,14 +87,14 @@
           {{ form | payment_button }}
         {%- endif -%}
       </div>
-      <a
+      {% comment %} <a
           style="display: none;"
           id="out-of-stock"
           class="klaviyo-bis-trigger button button--full-width button--primary"
           href="#"
         >
           Notify me when available
-        </a>
+        </a> {% endcomment %}
     {%- endform -%}
     {% endif %}
   </product-form>
