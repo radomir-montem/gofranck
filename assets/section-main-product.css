@@ -1227,8 +1227,3 @@ a.product__text {
   width: auto;
   padding: 0 10px;
 }
-
-.sg-product-page-button[disabled],
-.sg-product-page-button[disabled] + .shopify-payment-button {
-  display: none !important;
-}
