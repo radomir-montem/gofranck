@@ -927,7 +927,7 @@ window.addEventListener('load', function(){
 
   function applyDiscount(code) {
     if(!code) return;
-    localStorate.setItem('apply_discount', 'true');
+    localStorage.setItem('apply_discount', 'true');
     const path = window.location.pathname;
     window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
   }
