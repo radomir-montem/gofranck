@@ -921,15 +921,9 @@ window.addEventListener('load', function(){
   });
 
   function applyDiscount(code) {
-    if (!code) return;
-
-    const currentUrl = new URL(window.location.href);
-    currentUrl.searchParams.set('open', 'cart'); // preserves other params safely
-
-    const redirectPath = currentUrl.pathname + currentUrl.search;
-    const discountUrl = `/discount/${encodeURIComponent(code)}?redirect=${encodeURIComponent(redirectPath)}`;
-
-    window.location.href = discountUrl;
+    if(!code) return;
+    const path = window.location.pathname;
+    window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
   }
 
 })
