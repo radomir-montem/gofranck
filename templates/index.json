@@ -28,9 +28,9 @@
         },
         "slide_nAWbXj": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS.jpg",
+            "mobile_image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS16.jpg",
             "text1": "",
             "text2": "",
             "subtitle": "",
