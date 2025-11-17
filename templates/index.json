@@ -35,9 +35,9 @@
             "text1": "SALE WEEK",
             "text2": "",
             "subtitle": "",
-            "button_1_text": "MEN",
-            "url_1": "",
-            "button_2_text": "WOMEN",
+            "button_1_text": "SHOP NOW",
+            "url_1": "shopify://collections/sale-week",
+            "button_2_text": "",
             "url_2": ""
           }
         },
