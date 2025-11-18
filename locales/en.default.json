@@ -118,6 +118,10 @@
       "description": "Description",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "inventory_status": {
+        "low": "Los stock - {{ quantity }} items left",
+        "sale": "In stock, ready to ship"
+      },
       "media": {
         "gallery_viewer": "Gallery Viewer",
         "load_image": "Load image {{ index }} in gallery view",
@@ -192,10 +196,6 @@
       "sort_by_label": "Sort by:",
       "to": "To",
       "clear_filter": "Remove filter"
-    },
-    "inventory_status": {
-      "low": "Los stock - {{ quantity }} items left",
-      "sale": "In stock, ready to ship"
     }
   },
   "templates": {
