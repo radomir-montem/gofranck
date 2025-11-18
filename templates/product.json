@@ -32,6 +32,12 @@
             "coming_soon_text": "Coming soon"
           }
         },
+        "inventory_status_AzCR8g": {
+          "type": "inventory_status",
+          "settings": {
+            "threshold": 8
+          }
+        },
         "a2b2e0b4-ef70-4781-a70f-a0a601d174aa": {
           "type": "usp-content",
           "settings": {
@@ -81,6 +87,7 @@
         "5a631696-0f5b-4279-8d3e-8e5745ef9737",
         "7373c105-9cde-43b7-a43f-ed518d93056f",
         "d160fe4a-74eb-483a-95dc-809bf651e66b",
+        "inventory_status_AzCR8g",
         "a2b2e0b4-ef70-4781-a70f-a0a601d174aa",
         "selleasy_lb_upsell_widget_pal_JBhibM",
         "collapsible_tab_3YH9Qy",
@@ -106,9 +113,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
