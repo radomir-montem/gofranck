@@ -488,3 +488,52 @@ cart-upsell-form form {
 .sg-lb-widget-bl .lb-bundle-cta-cont {
   margin-bottom: 0 !important;
 }
+
+.sg-inventory-status__item {
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@keyframes inventory-pulse{
+  0%{
+    opacity:0.5;
+  }
+  to{
+    opacity:0;
+    transform:scale(2.5);
+  }
+}
+
+.icon--inventory:after,.icon--inventory:before{
+    background:#54c63a;
+    border-radius:9px;
+    content:"";
+    height:9px;
+    left:0;
+    margin:8px;
+    position:absolute;
+    top:0;
+    width:9px;
+  }
+
+.icon--inventory:before{
+    animation:inventory-pulse 2s linear infinite;
+  }
+
+.inventory--low .icon--inventory:after,.inventory--low .icon--inventory:before{
+  background:#f4af29;
+}
+
+.sg-inventory-status__item {
+  display: flex;
+  align-items: center;
+}
+
+.sg-inventory-status__item .icon {
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  width: 25px;
+}
