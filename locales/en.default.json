@@ -191,11 +191,11 @@
       "sort_button": "Sort",
       "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Remove filter",
-      "inventory_status": {
-        "low": "Los stock - {{ quantity }} items left",
-        "sale": "In stock, ready to ship"
-      }
+      "clear_filter": "Remove filter"
+    },
+    "inventory_status": {
+      "low": "Los stock - {{ quantity }} items left",
+      "sale": "In stock, ready to ship"
     }
   },
   "templates": {
