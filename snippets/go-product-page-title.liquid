@@ -13,5 +13,8 @@ usage:
 
 <div class="sg-product-page-wrapper">
     <h1 class="sg-product-page-h1-title">{{ first_name }}</h1>
+    {% if product.metafields.product_information.product_style != blank %}
+    <p class="go-product-card-style-title">{{ product.metafields.product_information.product_style }}</p>
+    {% endif %}
     <div class="sg-product-page-purchase-title">{% render 'price', product: product, price_class: '' %}</div>
 </div>
