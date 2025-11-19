@@ -146,7 +146,7 @@
 
                       assign show_incoming_inventory_message = false
 
-                      if block.settings.inventory_transfers_enable and variant.incoming and show_low_inventory_message == false and variant.available == false and oos_and_continue_selling
+                      if variant.incoming and show_low_inventory_message == false and variant.available == false and oos_and_continue_selling
                         assign show_incoming_inventory_message = true
                       endif
 
