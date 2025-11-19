@@ -34,7 +34,6 @@
         },
         "inventory_status_AzCR8g": {
           "type": "inventory_status",
-          "disabled": true,
           "settings": {
             "threshold": 8
           }
