@@ -112,8 +112,19 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_izr4Md": {
+            "type": "announcement",
+            "settings": {
+              "text": "SALE WEEK IS LIVE - UP TO 50% OFF",
+              "text_alignment": "center",
+              "color": "#000000",
+              "text_color": "#ffffff",
+              "link": "shopify://collections/sale-week"
+            }
+          },
           "announcement_frpfxA": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free shipping in NL, BE, DE, LU",
               "text_alignment": "center",
@@ -124,6 +135,7 @@
           }
         },
         "block_order": [
+          "announcement_izr4Md",
           "announcement_frpfxA"
         ],
         "settings": {}
