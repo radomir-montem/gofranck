@@ -67,27 +67,32 @@
                             style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                             class="go-hero-buttons-wrapper"
                         >
-                            <a
-                            {% if block.settings.url_1 == blank %}
-                                style="opacity: 0.5;"
-                            {% else %}
-                                href="{{ block.settings.url_1 }}"
+                            {% if block.settings.button_1_text != blank %}
+                                <a
+                                {% if block.settings.url_1 == blank %}
+                                    style="opacity: 0.5;"
+                                {% else %}
+                                    href="{{ block.settings.url_1 }}"
+                                {% endif %}
+                                class="go-hero-button w-inline-block"
+                                >
+                                <div class="go-hero-button-text">{{ block.settings.button_1_text }}</div>
+                                <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
+                                >
                             {% endif %}
-                            class="go-hero-button w-inline-block"
-                            >
-                            <div class="go-hero-button-text">{{ block.settings.button_1_text }}</div>
-                            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
-                            ><a
-                            {% if block.settings.url_2 == blank %}
-                                style="opacity: 0.5;"
-                            {% else %}
-                                href="{{ block.settings.url_2 }}"
+                            {% if block.settings.button_2_text %}
+                                <a
+                                {% if block.settings.url_2 == blank %}
+                                    style="opacity: 0.5;"
+                                {% else %}
+                                    href="{{ block.settings.url_2 }}"
+                                {% endif %}
+                                class="go-hero-button w-inline-block"
+                                >
+                                <div class="go-hero-button-text">{{ block.settings.button_2_text }}</div>
+                                <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+                                </a>
                             {% endif %}
-                            class="go-hero-button w-inline-block"
-                            >
-                            <div class="go-hero-button-text">{{ block.settings.button_2_text }}</div>
-                            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
-                            </a>
                         </div>
                         </div>
                     </div>
