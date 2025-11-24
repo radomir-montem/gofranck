@@ -67,13 +67,18 @@
         <div class="go-hero-div-height"><h3 class="go-h3-title-white">{{ section.settings.photo_header | escape }}</h3></div>
         <div class="go-hero-div-height">
           <div class="go-hero-buttons-wrapper">
+            {% if section.settings.button_1_text != blank %}
             <a href="{{ section.settings.url_1 }}" class="go-hero-button w-inline-block">
               <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
               <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div></a
-            ><a href="{{ section.settings.url_2 }}" class="go-hero-button w-inline-block">
-              <div class="go-hero-button-text">{{ section.settings.button_2_text | escape }}</div>
-              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
-            </a>
+            >
+            {% endif %}
+            {% if section.settings.button_2_text != blank %}
+              <a href="{{ section.settings.url_2 }}" class="go-hero-button w-inline-block">
+                <div class="go-hero-button-text">{{ section.settings.button_2_text | escape }}</div>
+                <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+              </a>
+            {% endif %}
           </div>
         </div>
       </div>
