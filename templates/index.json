@@ -12,20 +12,6 @@
     "hero_slideshow_FkHRjA": {
       "type": "hero-slideshow",
       "blocks": {
-        "slide_TrzDzf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/GF_Green_11.06_2025_-_JSGG-21.jpg",
-            "mobile_image": "shopify://shop_images/phone_GF_Green_11.06_2025_-_JSGG-21.jpg",
-            "text1": "AW",
-            "text2": "25",
-            "subtitle": "",
-            "button_1_text": "WOMEN",
-            "url_1": "shopify://collections/autumn-winter-2025-women",
-            "button_2_text": "MEN",
-            "url_2": "shopify://collections/autumn-winter-2025-men"
-          }
-        },
         "slide_nAWbXj": {
           "type": "slide",
           "settings": {
@@ -38,6 +24,20 @@
             "url_1": "shopify://collections/sale-week",
             "button_2_text": "",
             "url_2": ""
+          }
+        },
+        "slide_TrzDzf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/GF_Green_11.06_2025_-_JSGG-21.jpg",
+            "mobile_image": "shopify://shop_images/phone_GF_Green_11.06_2025_-_JSGG-21.jpg",
+            "text1": "AW",
+            "text2": "25",
+            "subtitle": "",
+            "button_1_text": "WOMEN",
+            "url_1": "shopify://collections/autumn-winter-2025-women",
+            "button_2_text": "MEN",
+            "url_2": "shopify://collections/autumn-winter-2025-men"
           }
         },
         "slide_7cjbAa": {
@@ -71,8 +71,8 @@
         }
       },
       "block_order": [
-        "slide_TrzDzf",
         "slide_nAWbXj",
+        "slide_TrzDzf",
         "slide_7cjbAa",
         "slide_Nhh7Ca"
       ],
