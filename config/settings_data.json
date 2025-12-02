@@ -114,6 +114,7 @@
         "blocks": {
           "announcement_izr4Md": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "SALE WEEK IS LIVE - UP TO 50% OFF",
               "text_alignment": "center",
