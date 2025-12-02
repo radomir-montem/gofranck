@@ -14,6 +14,7 @@
       "blocks": {
         "slide_nAWbXj": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS31.jpg",
             "mobile_image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS_46cc7188-5af4-4a4b-bc72-5a0ee49cb52c.jpg",
