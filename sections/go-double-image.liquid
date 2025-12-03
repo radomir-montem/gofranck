@@ -38,16 +38,18 @@
             <h2 class="go-image-heading2">{{ section.settings.header_1_text | escape }}</h2>
           </div>
         </div>
-        <div class="go-image-div-height">
-          <div
-            data-w-id="56fe25dd-96e0-d625-5a33-bc749d50df04"
-            class="go-two-image-button"
-            style="transform: translate3d(0px, 1000%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-          >
-            <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
-            <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+        {% if section.settings.button_1_text != blank %}
+          <div class="go-image-div-height">
+            <div
+              data-w-id="56fe25dd-96e0-d625-5a33-bc749d50df04"
+              class="go-two-image-button"
+              style="transform: translate3d(0px, 1000%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+            >
+              <div class="go-hero-button-text">{{ section.settings.button_1_text | escape }}</div>
+              <div class="hero-diamond-icon" style="background-color: rgba(255, 255, 255, 0);"></div>
+            </div>
           </div>
-        </div>
+        {% endif %}
       </div></a
     ><a
       data-w-id="6392a2ab-2814-6e58-5702-b6485db8c215"
