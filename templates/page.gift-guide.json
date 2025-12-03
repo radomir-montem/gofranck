@@ -17,40 +17,31 @@
         "padding_bottom": 28
       }
     },
-    "slideshow_8ATL3d": {
-      "type": "slideshow",
+    "hero_slideshow_ByiJXB": {
+      "type": "hero-slideshow",
       "blocks": {
-        "slide_ebk8hT": {
+        "slide_7UETJH": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/GF_Check_11.06_2025_-_JSGG-12.jpg",
-            "heading": "HOLIDAY GIFT GUIDE",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
+            "text1": "HOLIDAY GIFT GUIDE",
+            "text2": "",
+            "subtitle": "",
+            "button_1_text": "",
+            "url_1": "",
+            "button_2_text": "",
+            "url_2": ""
           }
         }
       },
       "block_order": [
-        "slide_ebk8hT"
+        "slide_7UETJH"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Hero Slideshow",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false
       }
     },
     "go_paragraph_rApRxh": {
@@ -109,7 +100,7 @@
   },
   "order": [
     "main",
-    "slideshow_8ATL3d",
+    "hero_slideshow_ByiJXB",
     "go_paragraph_rApRxh",
     "go_featured_products_QdUBnV",
     "go_featured_products_R7kCPE",
