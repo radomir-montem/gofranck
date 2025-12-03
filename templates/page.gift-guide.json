@@ -53,30 +53,15 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_cWF6Ay": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9mDzdk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Finding the right gift should feel just as warm as wearing it.</p><p>Explore our gift guide and discover thoughtful gifts designed to withstand wind, raind and snow, made to be loved and worn for years to come.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9mDzdk"
-      ],
+    "go_paragraph_rApRxh": {
+      "type": "go-paragraph",
       "custom_css": [
-        ".rich-text__text p {margin: 0;}"
+        ".go-paragraph p {margin: 0;}"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "go paragraph",
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "header_text": "",
+        "paragraph": "<p>Finding the right gift should feel just as warm as wearing it.</p><p>Explore our gift guide and discover thoughtful gifts designed to withstand wind, raind and snow, made to be loved and worn for years to come.</p>"
       }
     },
     "go_featured_products_QdUBnV": {
@@ -125,7 +110,7 @@
   "order": [
     "main",
     "slideshow_8ATL3d",
-    "rich_text_cWF6Ay",
+    "go_paragraph_rApRxh",
     "go_featured_products_QdUBnV",
     "go_featured_products_R7kCPE",
     "go_double_image_aEzk9Y"
