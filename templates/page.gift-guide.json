@@ -78,11 +78,54 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "go_featured_products_QdUBnV": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "DEALS",
+        "image_aspect_ratio": 75,
+        "product_1": "cold-winter-sky-captain-blue",
+        "product_2": "cold-winter-apricot",
+        "product_3": "cold-winter-deep-black-2",
+        "product_4": "",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_featured_products_R7kCPE": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "ACCESSORIES",
+        "image_aspect_ratio": 75,
+        "product_1": "dara-classic-check",
+        "product_2": "dara-sky-captain-blue",
+        "product_3": "dara-deep-black",
+        "product_4": "kairos-deep-black",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_double_image_aEzk9Y": {
+      "type": "go-double-image",
+      "name": "go double image banner",
+      "settings": {
+        "header_1_text": "Title",
+        "button_1_text": "Button 1",
+        "url_1": "",
+        "header_2_text": "Title",
+        "button_2_text": "Button 1",
+        "url_2": ""
+      }
     }
   },
   "order": [
     "main",
     "slideshow_8ATL3d",
-    "rich_text_cWF6Ay"
+    "rich_text_cWF6Ay",
+    "go_featured_products_QdUBnV",
+    "go_featured_products_R7kCPE",
+    "go_double_image_aEzk9Y"
   ]
 }
