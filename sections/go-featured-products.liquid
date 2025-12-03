@@ -48,7 +48,20 @@
         }
       </script>
     </div>
-    <div class="go-featured-collection-grid">
+    {% assign product_count = 0 %}
+    {% if section.settings.product_1 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_2 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_3 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    {% if section.settings.product_4 != blank %}
+      {% assign product_count = product_count | plus: 1 %}
+    {% endif %}
+    <div class="go-featured-collection-grid" data-grid-columns="{{ product_count }}">
       {% if section.settings.product_1 != blank %}
         {%
           render 'go-card-product',
