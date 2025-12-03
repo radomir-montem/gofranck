@@ -11,13 +11,75 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "slideshow_8ATL3d": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ebk8hT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/GF_Check_11.06_2025_-_JSGG-12.jpg",
+            "heading": "HOLIDAY GIFT GUIDE",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ebk8hT"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_cWF6Ay": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9mDzdk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Finding the right gift should feel just as warm as wearing it.</p><p>Explore our gift guide and discover thoughtful gifts designed to withstand wind, raind and snow, made to be loved and worn for years to come.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9mDzdk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "slideshow_8ATL3d",
+    "rich_text_cWF6Ay"
   ]
 }
