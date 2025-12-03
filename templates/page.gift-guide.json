@@ -97,7 +97,7 @@
       "type": "go-double-image",
       "custom_css": [
         ".go-section-two-images {padding-top: 0;}",
-        "@media (max-width: 750px) {.go-image-heading2 {transform: rotate(0); left: 20px; }}"
+        "@media (max-width: 750px) {.go-image-heading2 {transform: rotate(0); left: 20px; font-size: 40px; }}"
       ],
       "name": "go double image banner",
       "settings": {
