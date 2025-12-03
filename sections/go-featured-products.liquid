@@ -90,18 +90,20 @@
         %}
       {% endif %}
     </div>
-    <div class="go-featured-collection-button-block">
-      <div class="go-hero-div-height">
-        <a
-          data-w-id="6e96d34c-4ec5-09a9-2623-8286097ff706"
-          href="{{ section.settings.url_1 }}"
-          class="go-button-black w-inline-block"
-        >
-          <div class="go-button-text">{{ section.settings.button_1_text }}</div>
-          <div style="background-color: rgba(0, 0, 0, 0);" class="go-diamond-icon-black"></div>
-        </a>
+    {% if section.settings.button_1_text != blank %}
+      <div class="go-featured-collection-button-block">
+        <div class="go-hero-div-height">
+          <a
+            data-w-id="6e96d34c-4ec5-09a9-2623-8286097ff706"
+            href="{{ section.settings.url_1 }}"
+            class="go-button-black w-inline-block"
+          >
+            <div class="go-button-text">{{ section.settings.button_1_text }}</div>
+            <div style="background-color: rgba(0, 0, 0, 0);" class="go-diamond-icon-black"></div>
+          </a>
+        </div>
       </div>
-    </div>
+    {% endif %}
   </div>
 </div>
 
