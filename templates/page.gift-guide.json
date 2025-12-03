@@ -114,11 +114,11 @@
         "image_1": "shopify://shop_images/GOFRANCK_AW25_INDRA_BRONZE_GREEN_3.png",
         "header_1_text": "FOR WOEMN",
         "button_1_text": "",
-        "url_1": "",
+        "url_1": "shopify://collections/autumn-winter-2025-women",
         "image_2": "shopify://shop_images/GOFRANCK_AW25_OZONE_BRONZE_GREEN_1.png",
         "header_2_text": "FOR MEN",
         "button_2_text": "",
-        "url_2": ""
+        "url_2": "shopify://collections/autumn-winter-2025-men"
       }
     }
   },
