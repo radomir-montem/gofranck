@@ -57,6 +57,9 @@
     },
     "go_featured_products_QdUBnV": {
       "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0;}"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "DEALS",
@@ -71,6 +74,9 @@
     },
     "go_featured_products_R7kCPE": {
       "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0;}"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "ACCESSORIES",
@@ -85,6 +91,9 @@
     },
     "go_double_image_aEzk9Y": {
       "type": "go-double-image",
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0;}"
+      ],
       "name": "go double image banner",
       "settings": {
         "image_1": "shopify://shop_images/GOFRANCK_AW25_INDRA_BRONZE_GREEN_3.png",
