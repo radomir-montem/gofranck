@@ -111,11 +111,13 @@
       "type": "go-double-image",
       "name": "go double image banner",
       "settings": {
-        "header_1_text": "Title",
-        "button_1_text": "Button 1",
+        "image_1": "shopify://shop_images/GOFRANCK_AW25_INDRA_BRONZE_GREEN_3.png",
+        "header_1_text": "FOR WOEMN",
+        "button_1_text": "",
         "url_1": "",
-        "header_2_text": "Title",
-        "button_2_text": "Button 1",
+        "image_2": "shopify://shop_images/GOFRANCK_AW25_OZONE_BRONZE_GREEN_1.png",
+        "header_2_text": "FOR MEN",
+        "button_2_text": "",
         "url_2": ""
       }
     }
