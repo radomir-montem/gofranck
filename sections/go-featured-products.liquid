@@ -49,25 +49,33 @@
       </script>
     </div>
     <div class="go-featured-collection-grid">
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_1
-      %}
+      {% if section.settings.product_1 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_1
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_2
-      %}
+      {% if section.settings.product_2 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_2
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_3
-      %}
+      {% if section.settings.product_3 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_3
+        %}
+      {% endif %}
 
-      {%
-        render 'go-card-product',
-        card_product: section.settings.product_4
-      %}
+      {% if section.settings.product_4 != blank %}
+        {%
+          render 'go-card-product',
+          card_product: section.settings.product_4
+        %}
+      {% endif %}
     </div>
     <div class="go-featured-collection-button-block">
       <div class="go-hero-div-height">
