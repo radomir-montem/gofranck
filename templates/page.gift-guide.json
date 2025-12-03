@@ -66,6 +66,9 @@
       "block_order": [
         "text_9mDzdk"
       ],
+      "custom_css": [
+        ".rich-text__text p {margin: 0;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
