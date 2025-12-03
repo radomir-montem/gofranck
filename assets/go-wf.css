@@ -2428,6 +2428,7 @@ li {
   position: absolute;
   inset: auto auto 0% 68px;
   transform: rotate(-90deg);
+  white-space: nowrap;
 }
 
 .go-two-image-button {
