@@ -66,7 +66,7 @@
       ],
       "name": "go featured products",
       "settings": {
-        "header": "DEALS",
+        "header": "JACKET + ACCESSORY BUNDLES",
         "image_aspect_ratio": 75,
         "product_1": "cold-winter-sky-captain-blue",
         "product_2": "cold-winter-apricot",
@@ -83,6 +83,20 @@
       ],
       "name": "go featured products",
       "settings": {
+        "header": "BEST SELLERS",
+        "image_aspect_ratio": 75,
+        "product_1": "dara-classic-check",
+        "product_2": "dara-sky-captain-blue",
+        "product_3": "dara-deep-black",
+        "product_4": "kairos-deep-black",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_featured_products_QXrQXb": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
         "header": "ACCESSORIES",
         "image_aspect_ratio": 75,
         "product_1": "dara-classic-check",
@@ -95,6 +109,7 @@
     },
     "go_double_image_aEzk9Y": {
       "type": "go-double-image",
+      "disabled": true,
       "custom_css": [
         ".go-section-two-images {padding-top: 0px !important;}",
         "@media (max-width: 750px) {.go-two-images-container {flex-direction: row; } .go-image-heading2 {font-size: 28px; } .go-image-block-aligned-left {height: 250px; }}"
@@ -118,6 +133,7 @@
     "go_paragraph_rApRxh",
     "go_featured_products_QdUBnV",
     "go_featured_products_R7kCPE",
+    "go_featured_products_QXrQXb",
     "go_double_image_aEzk9Y"
   ]
 }
