@@ -541,3 +541,23 @@ cart-upsell-form form {
 .sg-product-page-wrapper .go-product-card-style-title {
   margin-bottom: 1rem;
 }
+
+@media (min-width: 750px) {
+  .sg-product-page-hero.active .sg-product-page-image-grid {
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .sg-product-page-hero.active .sg-product-page-image {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
