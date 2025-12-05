@@ -550,7 +550,7 @@ cart-upsell-form form {
     overflow-y: auto;
   }
   
-  .sg-product-page-hero.active .sg-product-page-image {
+  .sg-product-page-hero.active .sg-product-page-image img {
     width: auto;
     height: 100%;
     margin: 0;
