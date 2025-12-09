@@ -126,6 +126,51 @@
         "url_2": "shopify://collections/autumn-winter-2025-men"
       }
     },
+    "image_with_text_nbYNFG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WQfAT4": {
+          "type": "heading",
+          "settings": {
+            "heading": "GOFRANCK GIFT CARD",
+            "heading_size": "h1"
+          }
+        },
+        "text_qRQh3g": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_agcr6t": {
+          "type": "button",
+          "settings": {
+            "button_label": "ORDER NOW",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_WQfAT4",
+        "text_qRQh3g",
+        "button_agcr6t"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/AW25_GIFTCARD_WESBHOP.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "176528462479418e60": {
       "type": "_blocks",
       "blocks": {
@@ -175,6 +220,7 @@
     "go_featured_products_R7kCPE",
     "go_featured_products_QXrQXb",
     "go_double_image_aEzk9Y",
+    "image_with_text_nbYNFG",
     "176528462479418e60"
   ]
 }
