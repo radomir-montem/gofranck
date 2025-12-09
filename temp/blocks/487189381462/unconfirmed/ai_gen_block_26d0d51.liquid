@@ -1,6 +1,552 @@
+{% doc %}
+  @prompt
+    Holographic product card
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-holographic-card-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: {{ block.settings.card_width }}px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+
+  .ai-holographic-card__inner-{{ ai_gen_id }} {
+    position: relative;
+    background: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    overflow: hidden;
+    transition: transform 0.1s ease-out;
+  }
+
+  .ai-holographic-card__shine-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 255, 0) 0%,
+      rgba(255, 0, 255, {{ block.settings.holographic_intensity | divided_by: 100.0 }}) 25%,
+      rgba(0, 255, 255, {{ block.settings.holographic_intensity | divided_by: 100.0 }}) 50%,
+      rgba(255, 255, 0, {{ block.settings.holographic_intensity | divided_by: 100.0 }}) 75%,
+      rgba(255, 0, 255, 0) 100%
+    );
+    background-size: 200% 200%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  .ai-holographic-card__inner-{{ ai_gen_id }}:hover .ai-holographic-card__shine-{{ ai_gen_id }} {
+    opacity: 1;
+  }
+
+  .ai-holographic-card__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    margin-bottom: {{ block.settings.content_spacing }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-holographic-card__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-holographic-card__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-holographic-card__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .ai-holographic-card__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-holographic-card__content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-holographic-card__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.content_spacing | divided_by: 2 }}px;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-holographic-card__price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size }}px;
+    color: {{ block.settings.price_color }};
+    margin: 0 0 {{ block.settings.content_spacing }}px;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-holographic-card__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    margin: 0 0 {{ block.settings.content_spacing }}px;
+    text-align: {{ block.settings.text_alignment }};
+    line-height: 1.5;
+  }
+
+  .ai-holographic-card__button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_size }}px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: {% if block.settings.button_full_width %}100%{% else %}auto{% endif %};
+  }
+
+  .ai-holographic-card__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+  }
+
+  .ai-holographic-card__button-wrapper-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-holographic-card-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+  }
+{% endstyle %}
+
+<holographic-card-{{ ai_gen_id }}
+  class="ai-holographic-card-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-holographic-card__inner-{{ ai_gen_id }}">
+    <div class="ai-holographic-card__shine-{{ ai_gen_id }}"></div>
+
+    <div class="ai-holographic-card__image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.product %}
+        {% if block.settings.product.featured_image %}
+          <img
+            src="{{ block.settings.product.featured_image | image_url: width: 800 }}"
+            alt="{{ block.settings.product.featured_image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.product.featured_image.width }}"
+            height="{{ block.settings.product.featured_image.height }}"
+            class="ai-holographic-card__image-{{ ai_gen_id }}"
+          >
+        {% else %}
+          <div class="ai-holographic-card__image-placeholder-{{ ai_gen_id }}">
+            {{ 'product-1' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      {% elsif block.settings.custom_image %}
+        <img
+          src="{{ block.settings.custom_image | image_url: width: 800 }}"
+          alt="{{ block.settings.custom_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.custom_image.width }}"
+          height="{{ block.settings.custom_image.height }}"
+          class="ai-holographic-card__image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-holographic-card__image-placeholder-{{ ai_gen_id }}">
+          {{ 'product-1' | placeholder_svg_tag }}
+          <div class="ai-holographic-card__empty-state-{{ ai_gen_id }}">
+            Next, add a product or image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-holographic-card__content-{{ ai_gen_id }}">
+      {% if block.settings.product %}
+        <h3 class="ai-holographic-card__title-{{ ai_gen_id }}">
+          {{ block.settings.product.title }}
+        </h3>
+        <div class="ai-holographic-card__price-{{ ai_gen_id }}">
+          {{ block.settings.product.price | money }}
+        </div>
+        {% if block.settings.show_description and block.settings.product.description != blank %}
+          <div class="ai-holographic-card__description-{{ ai_gen_id }}">
+            {{ block.settings.product.description | strip_html | truncate: 120 }}
+          </div>
+        {% endif %}
+        {% if block.settings.show_button %}
+          <div class="ai-holographic-card__button-wrapper-{{ ai_gen_id }}">
+            <a
+              href="{{ block.settings.product.url }}"
+              class="ai-holographic-card__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      {% else %}
+        {% if block.settings.custom_title != blank %}
+          <h3 class="ai-holographic-card__title-{{ ai_gen_id }}">
+            {{ block.settings.custom_title }}
+          </h3>
+        {% endif %}
+        {% if block.settings.custom_price != blank %}
+          <div class="ai-holographic-card__price-{{ ai_gen_id }}">
+            {{ block.settings.custom_price }}
+          </div>
+        {% endif %}
+        {% if block.settings.custom_description != blank %}
+          <div class="ai-holographic-card__description-{{ ai_gen_id }}">
+            {{ block.settings.custom_description }}
+          </div>
+        {% endif %}
+        {% if block.settings.show_button and block.settings.custom_link %}
+          <div class="ai-holographic-card__button-wrapper-{{ ai_gen_id }}">
+            <a
+              href="{{ block.settings.custom_link }}"
+              class="ai-holographic-card__button-{{ ai_gen_id }}"
+            >
+              {{ block.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</holographic-card-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HolographicCard{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.card = this.querySelector('.ai-holographic-card__inner-{{ ai_gen_id }}');
+        this.shine = this.querySelector('.ai-holographic-card__shine-{{ ai_gen_id }}');
+      }
+
+      connectedCallback() {
+        this.card.addEventListener('mousemove', this.handleMouseMove.bind(this));
+        this.card.addEventListener('mouseleave', this.handleMouseLeave.bind(this));
+      }
+
+      handleMouseMove(e) {
+        const rect = this.card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        this.card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+
+        const percentX = (x / rect.width) * 100;
+        const percentY = (y / rect.height) * 100;
+        this.shine.style.backgroundPosition = `${percentX}% ${percentY}%`;
+      }
+
+      handleMouseLeave() {
+        this.card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      }
+
+      disconnectedCallback() {
+        this.card.removeEventListener('mousemove', this.handleMouseMove);
+        this.card.removeEventListener('mouseleave', this.handleMouseLeave);
+      }
+    }
+
+    customElements.define('holographic-card-{{ ai_gen_id }}', HolographicCard{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Holographic product card",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show description",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Custom content"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image",
+      "label": "Custom image"
+    },
+    {
+      "type": "text",
+      "id": "custom_title",
+      "label": "Custom title"
+    },
+    {
+      "type": "text",
+      "id": "custom_price",
+      "label": "Custom price"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_description",
+      "label": "Custom description"
+    },
+    {
+      "type": "url",
+      "id": "custom_link",
+      "label": "Custom link"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "View product"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_full_width",
+      "label": "Full width button",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "label": "Card width",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Card padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "holographic_intensity",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "label": "Holographic intensity",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 8,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Content spacing",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "label": "Price size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Button hover background",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Holographic product card"
+    }
+  ]
+}
 {% endschema %}
