@@ -34,12 +34,14 @@
         },
         "inventory_status_AzCR8g": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "threshold": 5
           }
         },
         "a2b2e0b4-ef70-4781-a70f-a0a601d174aa": {
           "type": "usp-content",
+          "disabled": true,
           "settings": {
             "usp1": "100 days return period",
             "usp2": "Order before 15:00, shipped out today",
@@ -48,6 +50,7 @@
         },
         "collapsible_tab_3YH9Qy": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "description",
             "icon": "none",
@@ -57,6 +60,7 @@
         },
         "collapsible_tab_QazwrQ": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Specifications",
             "icon": "none",
@@ -66,6 +70,7 @@
         },
         "collapsible_tab_zgXwrh": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping",
             "icon": "none",
@@ -75,14 +80,17 @@
         },
         "selleasy_lb_upsell_widget_pal_JBhibM": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pal/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "disabled": true,
           "settings": {}
         },
         "selleasy_lb_upsell_widget_pac_jRBk7c": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pac/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "disabled": true,
           "settings": {}
         },
         "selleasy_lb_upsell_widget_bl_qPLbcz": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "disabled": true,
           "settings": {}
         }
       },
