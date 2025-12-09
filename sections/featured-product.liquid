@@ -335,11 +335,16 @@
                   <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
                 </p>
               {%- endif -%}
+            {%- when 'description' -%}
+              {% if product.description != blank %}
+                <div class="">
+                  {{ product.description }}
+                </div>
+              {% endif %}
             {%- endcase -%}
           {%- endfor -%}
-        <a{% if product == blank %} role="link" aria-disabled="true"{% else %} href="{{ product.url }}"{% endif %} class="link product__view-details animate-arrow">
+        <a{% if product == blank %} role="link" aria-disabled="true"{% else %} href="{{ product.url }}"{% endif %} class="button button--full-width button--primary product__view-details">
           {{ 'products.product.view_full_details' | t }}
-          {% render 'icon-arrow' %}
         </a>
         </div>
       </div>
@@ -621,6 +626,13 @@
           "content": "t:sections.featured-product.blocks.rating.settings.paragraph.content"
         }
       ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "settings": [
+      ],
+      "limit": 1
     }
   ],
   "settings": [
