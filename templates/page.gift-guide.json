@@ -107,6 +107,20 @@
         "url_1": ""
       }
     },
+    "go_featured_products_rC78aa": {
+      "type": "go-featured-products",
+      "name": "go featured products",
+      "settings": {
+        "header": "GOFRANCK GIFT CARD",
+        "image_aspect_ratio": 75,
+        "product_1": "gift-card",
+        "product_2": "",
+        "product_3": "",
+        "product_4": "",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
     "go_double_image_aEzk9Y": {
       "type": "go-double-image",
       "disabled": true,
@@ -219,6 +233,7 @@
     "go_featured_products_QdUBnV",
     "go_featured_products_R7kCPE",
     "go_featured_products_QXrQXb",
+    "go_featured_products_rC78aa",
     "go_double_image_aEzk9Y",
     "image_with_text_nbYNFG",
     "176528462479418e60"
