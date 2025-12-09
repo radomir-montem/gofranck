@@ -131,6 +131,7 @@
       "blocks": {
         "ai_gen_block_ca49ba7_BtUd9B": {
           "type": "ai_gen_block_ca49ba7",
+          "disabled": true,
           "settings": {
             "heading": "FEATURED PRODUCTS",
             "collection": "archive-sale",
