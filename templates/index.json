@@ -14,14 +14,14 @@
       "blocks": {
         "slide_nAWbXj": {
           "type": "slide",
-          "disabled": true,
+          "name": "GIFT GUIDE",
           "settings": {
-            "image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS31.jpg",
-            "mobile_image": "shopify://shop_images/GF_AW25_BLACK_FRIDAY_ADS_46cc7188-5af4-4a4b-bc72-5a0ee49cb52c.jpg",
-            "text1": "SALE WEEK",
+            "image": "shopify://shop_images/GF24120811295.jpg",
+            "mobile_image": "shopify://shop_images/GF_GIFTGUIDE_MOBILE_COMP.jpg",
+            "text1": "HOLIDAY GIFT GUIDE",
             "text2": "",
             "subtitle": "",
-            "button_1_text": "SHOP SALE WEEK",
+            "button_1_text": "EXPLORE NOW",
             "url_1": "shopify://collections/sale-week",
             "button_2_text": "",
             "url_2": ""
