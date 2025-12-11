@@ -67,6 +67,7 @@
       "name": "go featured products",
       "settings": {
         "header": "JACKET + ACCESSORY BUNDLES",
+        "text": "<p>Bundle any AW25 jacket & accessory and get a 15% off</p>",
         "image_aspect_ratio": 75,
         "product_1": "aire-classic-check",
         "product_2": "cold-winter-apricot",
@@ -84,6 +85,7 @@
       "name": "go featured products",
       "settings": {
         "header": "ACCESSORIES",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "retrogade-classic-check",
         "product_2": "dara-sky-captain-blue",
@@ -98,6 +100,7 @@
       "name": "go featured products",
       "settings": {
         "header": "BEST SELLERS",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "ozone-castor-grey",
         "product_2": "cold-winter-bronze-green",
@@ -113,6 +116,7 @@
       "name": "go featured products",
       "settings": {
         "header": "GOFRANCK GIFT CARD",
+        "text": "",
         "image_aspect_ratio": 75,
         "product_1": "gift-card",
         "product_2": "",
