@@ -132,6 +132,8 @@
                     </p>
                   {% endfor %}
                 </div>
+              {%- when 'text' -%}
+                <div class="product__text" {{ block.shopify_attributes }}>{{- block.settings.text -}}</div>
             {% endcase %}
           {% endfor %}
       </div>
@@ -754,6 +756,17 @@
         }
       ],
       "limit": 1
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
     }
   ]
 }
