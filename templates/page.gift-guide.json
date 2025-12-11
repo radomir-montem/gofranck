@@ -97,6 +97,9 @@
     },
     "go_featured_products_QXrQXb": {
       "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0 !important;}"
+      ],
       "name": "go featured products",
       "settings": {
         "header": "BEST SELLERS",
