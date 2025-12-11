@@ -566,3 +566,8 @@ cart-upsell-form form {
   margin: 0;
   font-size: 14px;
 }
+
+.go-section-featured-collection .rich-text__text {
+  margin: 10px 0;
+  color: #000;
+}
