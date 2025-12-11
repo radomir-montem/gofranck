@@ -83,11 +83,11 @@
       ],
       "name": "go featured products",
       "settings": {
-        "header": "BEST SELLERS",
+        "header": "ACCESSORIES",
         "image_aspect_ratio": 75,
-        "product_1": "dara-classic-check",
+        "product_1": "retrogade-classic-check",
         "product_2": "dara-sky-captain-blue",
-        "product_3": "dara-deep-black",
+        "product_3": "keshet-deep-black",
         "product_4": "kairos-deep-black",
         "button_1_text": "",
         "url_1": ""
@@ -97,12 +97,12 @@
       "type": "go-featured-products",
       "name": "go featured products",
       "settings": {
-        "header": "ACCESSORIES",
+        "header": "BEST SELLERS",
         "image_aspect_ratio": 75,
-        "product_1": "dara-classic-check",
-        "product_2": "dara-sky-captain-blue",
-        "product_3": "dara-deep-black",
-        "product_4": "kairos-deep-black",
+        "product_1": "ozone-castor-grey",
+        "product_2": "cold-winter-bronze-green",
+        "product_3": "climate-federal-blue",
+        "product_4": "eye-arctic-white",
         "button_1_text": "",
         "url_1": ""
       }
