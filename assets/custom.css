@@ -587,4 +587,8 @@ cart-upsell-form form {
   .featured-product-section .grid .product__info-wrapper {
     width: calc(75% - var(--grid-desktop-horizontal-spacing) / 2);
   }
+
+  .featured-product-section .button {
+    max-width: 300px;
+  }
 }
