@@ -561,3 +561,7 @@ cart-upsell-form form {
     transform: translateX(-50%);
   }
 }
+
+.product__text p {
+  margin: 0;
+}
