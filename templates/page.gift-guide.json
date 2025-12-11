@@ -200,14 +200,17 @@
             "heading_size": "h1"
           }
         },
-        "description_pipMTA": {
-          "type": "description",
-          "settings": {}
+        "text_qkcDtp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The perfect gift for those who move through the city.<br/><br/>Give the freedom to choose with the GOFRANCK Gift Card. Whether it's a waterproof jacket for the daily commute, a versatile shell, or an accessory, they decide.<br/><br/>Available in multiple amounts and delivered straight to your inbox, ready to be shared instantly. Simple. Thoughtful. Weatherproof.</p>",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "title_WMxyPw",
-        "description_pipMTA"
+        "text_qkcDtp"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
