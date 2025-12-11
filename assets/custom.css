@@ -578,4 +578,12 @@ cart-upsell-form form {
     padding-right: 60px;
     max-width: 100%;
   }
+
+  .featured-product-section .grid .product__media-wrapper {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .featured-product-section .grid .product__info-wrapper {
+    width: calc(75% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
 }
