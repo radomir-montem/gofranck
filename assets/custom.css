@@ -595,6 +595,10 @@ cart-upsell-form form {
   .featured-product-section .button {
     max-width: 300px;
   }
+
+  .featured-product-section .product__info-container {
+    max-width: 100%;
+  }
 }
 
 .featured-product-section .button {
