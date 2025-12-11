@@ -572,6 +572,10 @@ cart-upsell-form form {
   color: #000;
 }
 
+.featured-product-section .product__title {
+  font-weight: 700;
+}
+
 @media (min-width: 750px) {
   .featured-product-section.page-width {
     padding-left: 60px;
