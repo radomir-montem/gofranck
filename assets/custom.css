@@ -604,3 +604,7 @@ cart-upsell-form form {
 .featured-product-section .button {
   font-weight: 700;
 }
+
+.shopify-block:empty {
+  display: none !important;
+}
