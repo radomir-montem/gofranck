@@ -114,7 +114,6 @@
         "blocks": {
           "announcement_izr4Md": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "GIFT SEASON - JACKET + ACCESSORY 10% OFF",
               "text_alignment": "center",
@@ -125,6 +124,7 @@
           },
           "announcement_frpfxA": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free shipping in NL, BE, DE, LU",
               "text_alignment": "center",
