@@ -116,16 +116,15 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "SALE WEEK IS LIVE - UP TO 50% OFF",
+              "text": "GIFT SEASON - JACKET + ACCESSORY 10% OFF",
               "text_alignment": "center",
               "color": "#000000",
               "text_color": "#ffffff",
-              "link": "shopify://collections/sale-week"
+              "link": "shopify://pages/gift-guide"
             }
           },
           "announcement_frpfxA": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Free shipping in NL, BE, DE, LU",
               "text_alignment": "center",
