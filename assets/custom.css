@@ -596,3 +596,7 @@ cart-upsell-form form {
     max-width: 300px;
   }
 }
+
+.featured-product-section .button {
+  font-weight: 700;
+}
