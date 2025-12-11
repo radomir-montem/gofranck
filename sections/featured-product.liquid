@@ -84,9 +84,9 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'text' -%}
-              <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+              <div class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
                 {{- block.settings.text -}}
-              </p>
+              </div>
             {%- when 'title' -%}
               <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {%- if product.title != blank -%}
@@ -483,9 +483,8 @@
       "name": "t:sections.featured-product.blocks.text.name",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
-          "default": "Text block",
           "label": "t:sections.featured-product.blocks.text.settings.text.label"
         },
         {
@@ -722,21 +721,7 @@
       "name": "t:sections.featured-product.presets.name",
       "blocks": [
         {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        {
           "type": "title"
-        },
-        {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
         },
         {
           "type": "price"
