@@ -26,8 +26,9 @@
         },
         "text_JNHHJe": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p>Order by December 18 for the best chance of receiving your items before the Holidays.</p>"
+            "text": ""
           }
         },
         "d160fe4a-74eb-483a-95dc-809bf651e66b": {
