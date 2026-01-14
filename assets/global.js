@@ -918,7 +918,6 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 window.addEventListener('load', function(){
-  console.log('here');
   let applyBtn = document.querySelector("#apply-discount-btn");
   let discountCodeInput = document.querySelector("#discount-code");
 
@@ -934,6 +933,7 @@ window.addEventListener('load', function(){
 
   function applyDiscount(code) {
     if(!code) return;
+    console.log('code', code);
     localStorage.setItem('apply_discount', 'true');
     const path = window.location.pathname;
     window.location.href = `/discount/${code}?redirect=${encodeURIComponent(path)}`;
