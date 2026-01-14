@@ -918,6 +918,7 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 window.addEventListener('load', function(){
+  console.log('here');
   let applyBtn = document.querySelector("#apply-discount-btn");
   let discountCodeInput = document.querySelector("#discount-code");
 
