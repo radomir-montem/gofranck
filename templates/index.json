@@ -12,19 +12,18 @@
     "hero_slideshow_FkHRjA": {
       "type": "hero-slideshow",
       "blocks": {
-        "slide_nAWbXj": {
+        "slide_BdHm4g": {
           "type": "slide",
-          "name": "GIFT GUIDE",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/GF24120811295.jpg",
-            "mobile_image": "shopify://shop_images/GF_GIFTGUIDE_MOBILE_3808d3d1-919f-48ce-b365-c61cef551215.jpg",
-            "text1": "HOLIDAY GIFT GUIDE",
-            "text2": "",
-            "subtitle": "",
-            "button_1_text": "EXPLORE NOW",
-            "url_1": "shopify://pages/gift-guide",
-            "button_2_text": "",
+            "image": "shopify://shop_images/AW25_SALE.jpg",
+            "mobile_image": "shopify://shop_images/movile_AW25_SALE.jpg",
+            "text1": "SALE",
+            "text2": "LIVE",
+            "subtitle": "25% OFF SELECTED ITEMS AT",
+            "button_1_text": "Button 1",
+            "url_1": "",
+            "button_2_text": "Button 2",
             "url_2": ""
           }
         },
@@ -73,7 +72,7 @@
         }
       },
       "block_order": [
-        "slide_nAWbXj",
+        "slide_BdHm4g",
         "slide_TrzDzf",
         "slide_7cjbAa",
         "slide_Nhh7Ca"
