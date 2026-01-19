@@ -14,17 +14,16 @@
       "blocks": {
         "slide_BdHm4g": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/AW25_SALE.jpg",
             "mobile_image": "shopify://shop_images/movile_AW25_SALE.jpg",
-            "text1": "SALE",
-            "text2": "LIVE",
-            "subtitle": "25% OFF SELECTED ITEMS AT",
-            "button_1_text": "Button 1",
-            "url_1": "",
-            "button_2_text": "Button 2",
-            "url_2": ""
+            "text1": "SALE IS LIVE",
+            "text2": "",
+            "subtitle": "UP TO 25% OFF SELECTED ITEMS",
+            "button_1_text": "MEN",
+            "url_1": "shopify://collections/autumn-winter-2025-men",
+            "button_2_text": "WOMEN",
+            "url_2": "shopify://collections/autumn-winter-2025-women"
           }
         },
         "slide_TrzDzf": {
