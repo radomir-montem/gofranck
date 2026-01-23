@@ -115,7 +115,7 @@
           "announcement_izr4Md": {
             "type": "announcement",
             "settings": {
-              "text": "AW25 SALE IS LIVE - UP TO 25% OFF ON SELECTED ITEMS",
+              "text": "SALE IS LIVE - UP TO 25% OFF ON SELECTED ITEMS",
               "text_alignment": "center",
               "color": "#000000",
               "text_color": "#ffffff",
@@ -238,6 +238,10 @@
           "richtext": "<p>Check our <a href=\"/pages/faq\" title=\"FAQ\">faq page</a> for most of your questions. Still need help? Drop us an email below. We are here to help!</p>",
           "submit_text": "Send Message"
         }
+      },
+      "main-password-form": {
+        "type": "main-password-form",
+        "settings": {}
       }
     },
     "content_for_index": [],
