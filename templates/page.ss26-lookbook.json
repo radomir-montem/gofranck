@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_slideshow_ByiJXB": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_7UETJH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/GF24120811295.jpg",
+            "text1": "HOLIDAY GIFT GUIDE",
+            "text2": "",
+            "subtitle": "",
+            "button_1_text": "",
+            "url_1": "",
+            "button_2_text": "",
+            "url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_7UETJH"
+      ],
+      "custom_css": [
+        "@media (min-width: 750px) {.go-section-hero {height: 60vh; }}",
+        ".go-hero-bottom-banner {display: none;}"
+      ],
+      "name": "Hero Slideshow",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "enable_arrow": false
+      }
+    },
+    "go_paragraph_rApRxh": {
+      "type": "go-paragraph",
+      "custom_css": [
+        ".go-paragraph p {margin: 0;}"
+      ],
+      "name": "go paragraph",
+      "settings": {
+        "header_text": "",
+        "paragraph": "<p>Celebrate the season of giving with an offer made just for you.<br/><br/>Bundle up with a jacket and an accessory to enjoy 10% off at checkout, whether it is for a friend, a loved one, or for yourself.=</p><p><br/>Find the perfect holiday gifts below.</p>"
+      }
+    },
+    "go_featured_products_QdUBnV": {
+      "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0 !important;}"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "JACKET + ACCESSORY BUNDLES",
+        "text": "<p>Bundle any AW25 jacket & accessory and get a 10% off</p>",
+        "image_aspect_ratio": 75,
+        "product_1": "aire-classic-check",
+        "product_2": "cold-winter-apricot",
+        "product_3": "barack-sky-captain-blue",
+        "product_4": "anatole-gray-green",
+        "button_1_text": "SEE MORE",
+        "url_1": "shopify://collections/autumn-winter-2025"
+      }
+    },
+    "go_featured_products_R7kCPE": {
+      "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0 !important;}"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "ACCESSORIES",
+        "text": "",
+        "image_aspect_ratio": 75,
+        "product_1": "retrogade-classic-check",
+        "product_2": "dara-sky-captain-blue",
+        "product_3": "keshet-deep-black",
+        "product_4": "kairos-deep-black",
+        "button_1_text": "SEE MORE",
+        "url_1": "shopify://collections/autumn-winter-2025-accessories"
+      }
+    },
+    "go_featured_products_QXrQXb": {
+      "type": "go-featured-products",
+      "custom_css": [
+        ".go-section-featured-collection {padding-top: 0 !important;}"
+      ],
+      "name": "go featured products",
+      "settings": {
+        "header": "BEST SELLERS",
+        "text": "",
+        "image_aspect_ratio": 75,
+        "product_1": "ozone-castor-grey",
+        "product_2": "cold-winter-bronze-green",
+        "product_3": "climate-federal-blue",
+        "product_4": "eye-arctic-white",
+        "button_1_text": "SEE MORE",
+        "url_1": "https://gofranck.com/collections/autumn-winter-2025?filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
+      }
+    },
+    "go_featured_products_rC78aa": {
+      "type": "go-featured-products",
+      "disabled": true,
+      "name": "go featured products",
+      "settings": {
+        "header": "GOFRANCK GIFT CARD",
+        "text": "",
+        "image_aspect_ratio": 75,
+        "product_1": "gift-card",
+        "product_2": "",
+        "product_3": "",
+        "product_4": "",
+        "button_1_text": "",
+        "url_1": ""
+      }
+    },
+    "go_double_image_aEzk9Y": {
+      "type": "go-double-image",
+      "disabled": true,
+      "custom_css": [
+        ".go-section-two-images {padding-top: 0px !important;}",
+        "@media (max-width: 750px) {.go-two-images-container {flex-direction: row; } .go-image-heading2 {font-size: 28px; } .go-image-block-aligned-left {height: 250px; }}"
+      ],
+      "name": "go double image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/GOFRANCK_AW25_INDRA_BRONZE_GREEN_3.png",
+        "header_1_text": "FOR WOMEN",
+        "button_1_text": "",
+        "url_1": "shopify://collections/autumn-winter-2025-women",
+        "image_2": "shopify://shop_images/GOFRANCK_AW25_OZONE_BRONZE_GREEN_1.png",
+        "header_2_text": "FOR MEN",
+        "button_2_text": "",
+        "url_2": "shopify://collections/autumn-winter-2025-men"
+      }
+    },
+    "image_with_text_nbYNFG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WQfAT4": {
+          "type": "heading",
+          "settings": {
+            "heading": "GOFRANCK GIFT CARD",
+            "heading_size": "h1"
+          }
+        },
+        "text_qRQh3g": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_agcr6t": {
+          "type": "button",
+          "settings": {
+            "button_label": "ORDER NOW",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_WQfAT4",
+        "text_qRQh3g",
+        "button_agcr6t"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/AW25_GIFTCARD_WESBHOP.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_gxfqJA": {
+      "type": "featured-product",
+      "blocks": {
+        "title_WMxyPw": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_qkcDtp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The perfect gift for those who move through the city.<br/><br/>Give the freedom to choose with the GOFRANCK Gift Card. Whether it's a waterproof jacket for the daily commute, a versatile shell, or an accessory, they decide.<br/><br/>Available in multiple amounts and delivered straight to your inbox, ready to be shared instantly. Simple. Thoughtful. Weatherproof.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "title_WMxyPw",
+        "text_qkcDtp"
+      ],
+      "custom_css": [],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "gift-card",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "176528462479418e60": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ca49ba7_BtUd9B": {
+          "type": "ai_gen_block_ca49ba7",
+          "disabled": true,
+          "settings": {
+            "heading": "FEATURED PRODUCTS",
+            "collection": "archive-sale",
+            "products_limit": 16,
+            "show_vendor": false,
+            "show_price": true,
+            "products_per_row": 4,
+            "products_per_row_tablet": 3,
+            "gap": 20,
+            "container_width": 1500,
+            "background_color": "#ffffff",
+            "heading_color": "#121212",
+            "text_color": "#121212",
+            "price_color": "#121212",
+            "sale_price_color": "#000000",
+            "card_background": "#ffffff",
+            "button_background": "#ffffff",
+            "button_border": "#121212",
+            "button_color": "#121212",
+            "button_hover_background": "#121212",
+            "button_hover_color": "#ffffff",
+            "heading_size": 32,
+            "card_border_radius": 0,
+            "padding_top": 40,
+            "padding_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ca49ba7_BtUd9B"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "hero_slideshow_ByiJXB",
+    "go_paragraph_rApRxh",
+    "go_featured_products_QdUBnV",
+    "go_featured_products_R7kCPE",
+    "go_featured_products_QXrQXb",
+    "go_featured_products_rC78aa",
+    "go_double_image_aEzk9Y",
+    "image_with_text_nbYNFG",
+    "featured_product_gxfqJA",
+    "176528462479418e60"
+  ]
+}
