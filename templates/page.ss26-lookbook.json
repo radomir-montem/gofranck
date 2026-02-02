@@ -17,6 +17,20 @@
         "padding_bottom": 28
       }
     },
+    "go_text_with_button_DcVYVM": {
+      "type": "go-text-with-button",
+      "name": "Text with buttons",
+      "settings": {
+        "title": "section title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi.",
+        "button_text1": "Button Text",
+        "button_link1": "",
+        "button_1_style": "go-light",
+        "button_text2": "Button Text",
+        "button_link2": "",
+        "button_2_style": "go-light"
+      }
+    },
     "multicolumn_kVjirL": {
       "type": "multicolumn",
       "blocks": {
@@ -344,6 +358,7 @@
   },
   "order": [
     "main",
+    "go_text_with_button_DcVYVM",
     "multicolumn_kVjirL",
     "hero_slideshow_ByiJXB",
     "go_paragraph_rApRxh",
