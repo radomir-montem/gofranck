@@ -21,7 +21,7 @@
       "type": "go-text-with-button",
       "name": "Text with buttons",
       "settings": {
-        "title": "section title",
+        "title": "INTRODUCING SS26",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi.",
         "button_text1": "Button Text",
         "button_link1": "",
@@ -34,6 +34,26 @@
     "multicolumn_kVjirL": {
       "type": "multicolumn",
       "blocks": {
+        "column_fTx6hC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/movile_AW25_SALE.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hHtTMp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/movile_AW25_SALE.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_RBn6p3": {
           "type": "column",
           "settings": {
@@ -76,6 +96,8 @@
         }
       },
       "block_order": [
+        "column_fTx6hC",
+        "column_hHtTMp",
         "column_RBn6p3",
         "column_wAafdE",
         "column_ec4B9E",
