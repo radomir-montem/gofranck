@@ -122,6 +122,17 @@
               "link": "shopify://collections/autumn-winter-2025"
             }
           },
+          "announcement_PkwPzd": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "SALE IS LIVE - UP TO 25% OFF ON SELECTED ITEMS",
+              "text_alignment": "center",
+              "color": "#000000",
+              "text_color": "#ffffff",
+              "link": "shopify://collections/autumn-winter-2025"
+            }
+          },
           "announcement_frpfxA": {
             "type": "announcement",
             "disabled": true,
@@ -136,6 +147,7 @@
         },
         "block_order": [
           "announcement_izr4Md",
+          "announcement_PkwPzd",
           "announcement_frpfxA"
         ],
         "settings": {}
