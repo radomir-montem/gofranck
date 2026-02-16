@@ -114,6 +114,7 @@
         "blocks": {
           "announcement_izr4Md": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "THIS WEEKEND ONLY - UP TO 40% OFF ON SELECTED ITEMS",
               "text_alignment": "center",
@@ -124,7 +125,6 @@
           },
           "announcement_PkwPzd": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "SALE IS LIVE - UP TO 25% OFF ON SELECTED ITEMS",
               "text_alignment": "center",
