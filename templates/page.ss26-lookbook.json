@@ -21,7 +21,7 @@
       "type": "go-text-with-button",
       "name": "Text with buttons",
       "settings": {
-        "title": "INTRODUCING SS26",
+        "title": "SPRING 26",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales justo non auctor. Etiam eu faucibus leo, at tincidunt velit. Ut non tristique dolor, et porttitor odio. Phasellus eget interdum mi.",
         "button_text1": "Button Text",
         "button_link1": "",
